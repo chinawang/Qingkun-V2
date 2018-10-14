@@ -1,0 +1,102 @@
+body {
+    background-color: #f9f9f9;
+}
+
+.main {
+    padding: 0;
+    max-width: none;
+    margin-bottom: 60px;
+}
+
+#owl-banner {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#owl-banner .item {
+    display: block;
+}
+#owl-banner img {
+    display: block;
+    width: 100%;
+}
+
+.owl-carousel .owl-wrapper-outer {
+    border-radius: 3px;
+    box-shadow: 0 0px 36px rgba(0,0,0,.1);
+}
+
+.owl-theme .owl-controls .owl-page span{
+    width: 40px;
+    height: 6px;
+    background: #007440;
+}
+
+.title-content {
+    padding-top: 70px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+
+}
+
+.title-content > h1 {
+    float: left;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #0d1318;
+    font-family: 'Heiti SC';
+
+}
+
+.subtitle-content {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    color: #9e9e9e;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+}
+
+.inner-detail {
+    padding-top: 40px;
+}
+
+.abs > p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #9e9e9e;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    outline: 0;
+    font-weight: normal;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+.bio > p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #2B2B2B;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-weight: normal;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+.title-back {
+    float: right;
+    margin-top: 20px;
+}
+
+.title-back > img{
+    height: 26px;
+}

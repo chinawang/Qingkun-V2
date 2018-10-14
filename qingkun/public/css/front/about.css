@@ -1,0 +1,136 @@
+body {
+    background-color: #f9f9f9;
+}
+
+.main {
+    padding: 0;
+    max-width: none;
+    margin-bottom: 60px;
+}
+
+.top-banner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-banner > img {
+    height: 300px;
+    width: 100%;
+}
+
+.top-text {
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 3;
+}
+
+.top-text > h3 {
+    font-family: "Benton Sans Light", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 46px;
+    max-width: 750px;
+    line-height: 55px;
+    text-align: center;
+    margin: 0px auto 10px;
+}
+
+.top-text > p {
+    font-family: "Benton Sans", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 750px;
+    line-height: 26px;
+    margin: 0px auto;
+}
+
+.overlay {
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.about-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    letter-spacing: 6px;
+    color: #0d1318;
+    font-family: 'Heiti SC';
+}
+
+.about-content {
+    margin-top: 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #0d1318;
+    font-family: 'Heiti SC';
+}
+
+.about-content > p {
+    font-family: inherit;
+}
+
+.contact-container {
+    position: relative;
+    margin-top: 60px;
+}
+
+#map-container {
+    height: 500px;
+    width: 100%;
+}
+
+.address-container {
+    padding: 40px;
+    height: 400px;
+    width: 360px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    box-shadow: 0 0px 50px rgba(0, 0, 0, 0.10);
+    background-color: #fff;
+    border-radius: 3px;
+    letter-spacing: 3px;
+}
+
+.address-container > h1 {
+    font-size: 24px;
+}
+
+.content-name {
+    margin-top: 40px;
+    color: #525252;
+    font-weight: bold;
+}
+
+.content-phone {
+    margin-top: 20px;
+    color: #525252;
+
+}
+
+.content-mail {
+    margin-top: 20px;
+    color: #525252;
+
+}
+
+.content-address {
+    margin-top: 20px;
+    color: #525252;
+    line-height: 30px;
+
+}

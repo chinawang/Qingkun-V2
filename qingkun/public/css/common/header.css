@@ -1,0 +1,117 @@
+.navbar-default {
+    /*style="background-color: #1296db;"*/
+    /*background-color: #1296db;*/
+
+    /*background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);*/
+    /*background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #2fa4e7), to(#1d9ce5));*/
+    /*background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);*/
+    background-color: #1a242f;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .60);
+}
+
+.navbar-brand {
+    margin-top: 2px;
+    padding: 12px 15px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Heiti SC';
+    color: #007440;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #007440;
+}
+
+.navbar-brand > img {
+    display: inline;
+    margin: 0 10px;
+    height: 100%;
+}
+
+.navbar-line {
+    margin: 20px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    width: 1px;
+    border-left: 1px solid #e6e6e6;
+}
+
+.navbar-subtitle {
+    margin: 0px 10px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    float: left;
+    color: #007440;;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.back-to-home {
+    margin: 0px 10px;
+    color: #007440;
+    float: left;
+    display: block;
+}
+
+.sayhello {
+    margin: 0px 10px;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+    color: #007440;
+    float: left;
+    display: block;
+}
+
+.dateStr {
+    margin: 0px 10px;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+    color: #007440;
+    float: left;
+    display: block;
+}
+
+.location {
+    height: 50px;
+    /* border-top: 1px solid transparent; */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .08);
+    margin-top: -27px;
+    margin-bottom: 21px;
+}
+
+.location h2 {
+    margin: 0;
+    text-indent: 20px;
+    line-height: 36px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #757575;
+    background: url(../..//img/header/home_sm.png) left center no-repeat;
+    top: 6px;
+    position: relative;
+    float: left;
+}
+
+.location h2 a:link, .location h2 a:visited {
+    color: #007440;
+}
+
+.location h2 em {
+    margin: 0 4px;
+}
+
+body {
+    margin: 0;
+    margin-top: 90px;
+    padding: 0;
+    min-height: 100vh;
+    font-family: PingFang SC, Microsoft YaHei UI, STHeitiSC-Light, Microsoft YaHei;
+}
+
+
+
+

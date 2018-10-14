@@ -1,0 +1,104 @@
+.navbar {
+    background-color: #ffffff;
+    height: 100%;
+    box-shadow: 0 1px 4px rgba(0,0,0,.1);;
+    /*box-shadow: 0px 0px 20px rgba(0, 0, 0, .10);*/
+}
+
+.navbar > .container {
+    max-width: 90%;
+}
+
+.navbar-fixed-top {
+    height: 66px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    height: 100%;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Heiti SC';
+    /*color: #3498db;*/
+}
+
+.navbar-brand > img {
+    display: inline;
+    /*margin: 0 10px;*/
+    height: 40px;
+}
+
+.nav-item {
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Heiti SC';
+}
+
+.nav-link {
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .nav-active > .nav-link {
+    color: #007440;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus{
+    color: #007440;
+    /*font-weight: bold;*/
+    transition: .3s;
+}
+
+.back-to-home {
+    margin: 0px 10px;
+    color: #007440;
+    float: left;
+    display: block;
+}
+
+
+.location {
+    height: 50px;
+    /* border-top: 1px solid transparent; */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .08);
+    margin-top: -27px;
+    margin-bottom: 21px;
+}
+
+.location h2 {
+    margin: 0;
+    text-indent: 20px;
+    line-height: 36px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #757575;
+    background: url(../..//img/header/home_sm.png) left center no-repeat;
+    top: 6px;
+    position: relative;
+    float: left;
+}
+
+.location h2 a:link, .location h2 a:visited {
+    color: #007440;
+}
+
+.location h2 em {
+    margin: 0 4px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: PingFang SC, Microsoft YaHei UI, STHeitiSC-Light, Microsoft YaHei;
+}
+
+
+
+

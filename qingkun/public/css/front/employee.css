@@ -1,0 +1,225 @@
+body{
+    background-color: #f9f9f9;
+}
+
+
+.main {
+    padding: 0;
+    max-width: none;
+    margin-bottom: 60px;
+}
+
+.top-banner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.top-banner > img{
+    height: 560px;
+    width: 100%;
+}
+
+.top-text {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 3;
+}
+
+.top-text > h3{
+    font-family: "Benton Sans Light", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 46px;
+    max-width: 750px;
+    line-height: 55px;
+    text-align: center;
+    margin: 0px auto 10px;
+}
+
+.top-text > p{
+    font-family: "Benton Sans", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 750px;
+    line-height: 26px;
+    margin: 0px auto;
+}
+
+.overlay {
+    height: 560px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,.4);
+}
+
+.row-card {
+    width: 1120px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    margin-bottom: 60px;
+}
+
+.card {
+    width: 220px;
+    margin: 20px;
+    height: 280px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 0.15rem;
+}
+
+.card-top {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 0px 36px rgba(0,0,0,.1);
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+}
+
+.card-main {
+    text-decoration:none;
+}
+
+.card-main:hover {
+    text-decoration:none;
+    outline: none;
+}
+
+.card-main:focus {
+    text-decoration:none;
+    outline: none;
+}
+
+.card-link {
+    float: right;
+    padding:10px;
+}
+
+.card-img {
+    height: 200px;
+    width: 100%;
+    display: block;
+    transition: all 0.6s;
+}
+
+.card-img:hover {
+    transform: scale(1.2);
+}
+
+.card-body {
+    letter-spacing: 8px;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.card-title {
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: #0d1318;
+    font-family: 'Heiti SC';
+}
+
+.card-text {
+
+    font-size: 14px;
+    color: #8c8c8c;
+    font-family: 'Heiti SC';
+
+}
+
+.modal-detail {
+}
+
+.modal-dialog {
+    width: 1000px;
+    max-width: 1000px;
+}
+
+.close {
+    top: 20px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    z-index: 9002;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.headshot >img {
+    width: 300px;
+    height:300px;
+    padding-top: 20px;
+}
+
+.content-left {
+    text-align: center;
+}
+
+.content-left > h3 {
+    color: #9e9e9e;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.content-right {
+    padding: 20px;
+}
+
+.content-right > h1 {
+    color: rgb(51, 51, 51);
+    font-family: "Benton Sans", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.content-right > h3 {
+    color: #9e9e9e;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.bio > p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #777777;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+.inner-detail {
+    margin: 0px;
+}

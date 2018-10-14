@@ -1,0 +1,32 @@
+.footer-container{
+    background-color: #2c3033;
+    height: 90px;
+    width: 100%;
+    line-height: 1.7;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+.foot-text {
+    color: #676b6f;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 30px;
+    text-align: center;
+}
+
+.foot-link {
+    color: #676b6f;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.foot-link:hover {
+    color: #007440;
+    text-decoration:none;
+}
+
+.foot-link:focus {
+    text-decoration:none;
+    outline: none;
+}
