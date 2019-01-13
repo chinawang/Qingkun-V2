@@ -67,22 +67,82 @@
                             </div>
 
                             <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
-                                <label for="type" class="col-md-4 control-label">建筑类型(选填)</label>
+                                <label for="type" class="col-md-4 control-label">建筑类型</label>
 
                                 <div class="col-md-6">
-                                    <input id="type" type="text" class="form-control" name="type"
-                                           value="{{ old('type') }}" placeholder="请输入建筑类型" >
-
-                                    @if ($errors->has('type'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('type') }}</strong>
-                                    </span>
-                                    @endif
+                                    @foreach ($types as $type)
+                                        <label class="checkbox-inline">
+                                            <input name="types[]" type="checkbox" id="inlineCheckbox{{$type['id']}}"
+                                                   value="{{$type['id']}}" {{!in_array($type['id'], $assignTypeIDs)?:' checked'}}>{{$type['name']}}
+                                        </label>
+                                    @endforeach
                                 </div>
                             </div>
 
+                            <div class="form-group{{ $errors->has('provence') ? ' has-error' : '' }}">
+                                <label for="provence" class="col-md-4 control-label">地区(省)</label>
+
+                                <div class="col-md-6">
+                                    <select class="form-control" id="select" name="provence" required>
+                                        <option value="" selected="selected" style="display: none">选择地区</option>
+                                        @foreach ($provences as $provence)
+                                            <option value="{{ $provence['id'] }}">{{ $provence['name'] }}</option>
+                                        @endforeach
+                                    </select>
+                                    @if ($errors->has('provence'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('provence') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+
+                                {{--<div class="col-md-6">--}}
+                                    {{--<select class="form-control" id="select" name="provence">--}}
+                                        {{--<option value="1">北京</option>--}}
+                                        {{--<option value="2">天津</option>--}}
+                                        {{--<option value="3">上海</option>--}}
+                                        {{--<option value="4">重庆</option>--}}
+                                        {{--<option value="5">河北</option>--}}
+                                        {{--<option value="6">山西</option>--}}
+                                        {{--<option value="7">辽宁</option>--}}
+                                        {{--<option value="8">吉林</option>--}}
+                                        {{--<option value="9">黑龙江</option>--}}
+                                        {{--<option value="10">江苏</option>--}}
+                                        {{--<option value="11">浙江</option>--}}
+                                        {{--<option value="12">安徽</option>--}}
+                                        {{--<option value="13">福建</option>--}}
+                                        {{--<option value="14">江西</option>--}}
+                                        {{--<option value="15">山东</option>--}}
+                                        {{--<option value="16">河南</option>--}}
+                                        {{--<option value="17">湖南</option>--}}
+                                        {{--<option value="18">湖北</option>--}}
+                                        {{--<option value="19">广东</option>--}}
+                                        {{--<option value="20">海南</option>--}}
+                                        {{--<option value="21">四川</option>--}}
+                                        {{--<option value="22">贵州</option>--}}
+                                        {{--<option value="23">云南</option>--}}
+                                        {{--<option value="24">陕西</option>--}}
+                                        {{--<option value="25">甘肃</option>--}}
+                                        {{--<option value="26">青海</option>--}}
+                                        {{--<option value="27">内蒙古</option>--}}
+                                        {{--<option value="28">广西</option>--}}
+                                        {{--<option value="29">宁夏</option>--}}
+                                        {{--<option value="30">西藏</option>--}}
+                                        {{--<option value="31">新疆</option>--}}
+                                        {{--<option value="32">香港</option>--}}
+                                        {{--<option value="33">澳门</option>--}}
+                                        {{--<option value="34">台湾</option>--}}
+                                    {{--</select>--}}
+                                    {{--@if ($errors->has('	provence'))--}}
+                                        {{--<span class="help-block">--}}
+                                        {{--<strong>{{ $errors->first('	provence') }}</strong>--}}
+                                    {{--</span>--}}
+                                    {{--@endif--}}
+                                {{--</div>--}}
+                            </div>
+
                             <div class="form-group{{ $errors->has('address') ? ' has-error' : '' }}">
-                                <label for="address" class="col-md-4 control-label">地址(选填)</label>
+                                <label for="address" class="col-md-4 control-label">地址</label>
 
                                 <div class="col-md-6">
                                     <input id="address" type="text" class="form-control" name="address"

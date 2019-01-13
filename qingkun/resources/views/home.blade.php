@@ -26,6 +26,12 @@
                                 </a>
                             </li>
                             <li class="job">
+                                <a href="/expertise/lists" class="menu-item">
+                                    <img class="menu-icon" src="/img/home/large/expertise.png">
+                                    <h4>专长管理</h4>
+                                </a>
+                            </li>
+                            <li class="job">
                                 <a href="/job/lists" class="menu-item">
                                     <img class="menu-icon" src="/img/home/large/job.png">
                                     <h4>招聘管理</h4>
