@@ -32,7 +32,7 @@ class ProjectTypeValidation extends Validation
         $input = $this->filterRequest(['project_id','types']);
 
         $rules = [
-            'project_id' => ['required','integer', 'min:0'],
+            'project_id' => ['','integer', 'min:0'],
             'types' => ['required','array'],
         ];
 
