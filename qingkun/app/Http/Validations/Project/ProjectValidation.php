@@ -35,7 +35,7 @@ class ProjectValidation extends Validation
         $input = $this->filterRequest([
             'name','abstract','introduction','photo_large_1','photo_large_2','photo_large_3','photo_large_4'
             ,'photo_large_5','photo_small_1','photo_small_2','photo_small_3','photo_small_4','photo_small_5'
-            ,'address','design_time','build_time','type','size','land_size','stage','flag']);
+            ,'provence','address','design_time','build_time','type','size','land_size','stage','flag']);
 
         $rules = [
             'name' => ['string'],
@@ -77,7 +77,7 @@ class ProjectValidation extends Validation
         $input = $this->filterRequest([
             'name','abstract','introduction','photo_large_1','photo_large_2','photo_large_3','photo_large_4'
             ,'photo_large_5','photo_small_1','photo_small_2','photo_small_3','photo_small_4','photo_small_5'
-            ,'address','design_time','build_time','type','size','land_size','stage','flag']);
+            ,'provence','address','design_time','build_time','type','size','land_size','stage','flag']);
 
 //        $input = Input::all();
 
