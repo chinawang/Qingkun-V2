@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateJobsTable extends Migration
+class CreateExpertisesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateJobsTable extends Migration
      */
     public function up()
     {
-        Schema::create('jobs', function (Blueprint $table) {
+        Schema::create('expertises', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('area')->nullable()->comment('地区');
-            $table->string('department')->nullable()->comment('部门');
-            $table->string('job')->nullable()->comment('职位名称');
-            $table->string('introduction')->nullable()->comment('岗位介绍');
-            $table->string('requirement')->nullable()->comment('岗位要求');
+            $table->string('photo')->nullable()->comment('图片');
+            $table->string('name')->nullable()->comment('名称');
+            $table->string('introduction')->nullable()->comment('正文');
+            $table->string('type')->nullable()->comment('类型');
             $table->tinyInteger('delete_process')->default(0)->comment('是否删除');
             $table->timestamps();
         });
@@ -32,6 +31,6 @@ class CreateJobsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jobs');
+        Schema::dropIfExists('expertises');
     }
 }

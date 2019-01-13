@@ -13,6 +13,7 @@ return array(
     'CreateAwardsTable' => $baseDir . '/database/migrations/2018_08_17_080720_create_awards_table.php',
     'CreateBannersTable' => $baseDir . '/database/migrations/2018_08_11_152704_create_banners_table.php',
     'CreateEmployeesTable' => $baseDir . '/database/migrations/2017_09_17_085330_create_employees_table.php',
+    'CreateExpertisesTable' => $baseDir . '/database/migrations/2019_01_13_042141_create_expertises_table.php',
     'CreateJobsTable' => $baseDir . '/database/migrations/2018_08_11_152643_create_jobs_table.php',
     'CreateLogsTable' => $baseDir . '/database/migrations/2017_06_04_042933_create_logs_table.php',
     'CreateNewsTable' => $baseDir . '/database/migrations/2018_08_11_153447_create_news_table.php',

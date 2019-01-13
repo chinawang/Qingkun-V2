@@ -28,6 +28,7 @@ class CreateProjectsTable extends Migration
             $table->string('photo_small_3')->nullable()->comment('小图3');
             $table->string('photo_small_4')->nullable()->comment('小图4');
             $table->string('photo_small_5')->nullable()->comment('小图5');
+            $table->string('province')->nullable()->comment('省');
             $table->string('address')->nullable()->comment('地址');
             $table->string('design_time')->nullable()->comment('设计时间');
             $table->string('build_time')->nullable()->comment('建成时间');
