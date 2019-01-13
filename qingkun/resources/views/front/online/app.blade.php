@@ -44,7 +44,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" >
         <div class="container">
             <div class="navbar-header">
 
@@ -69,8 +69,8 @@
             </div>
 
             <div class="collapse navbar-collapse" id="navbarColor03">
-                <!-- Left Side Of Navbar -->
-                <ul class="navbar-nav mr-auto">
+                <!-- Right Side Of Navbar -->
+                <ul class="navbar-nav navbar-right">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/preview') }}">首页</a>
                     </li>
