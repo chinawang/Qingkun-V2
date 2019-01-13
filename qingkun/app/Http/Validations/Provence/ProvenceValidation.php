@@ -66,7 +66,7 @@ class ProvenceValidation extends Validation
             throw new BadRequestException($validator->errors());
         }
 
-        $provence= $this->typeLogic->findPost($provenceId);
+        $provence= $this->provenceLogic->findProvence($provenceId);
         if($provence->id != $provenceId) {
             throw new ForbiddenException();
         }

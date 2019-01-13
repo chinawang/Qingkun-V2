@@ -65,6 +65,12 @@ class ProjectLogic extends Logic
         return $projectList;
     }
 
+//    public function getAllProjectsByType($typeId,$provenceId)
+//    {
+//        $list = $this->projectRepository->getAllProjectsByType($typeId,$provenceId);
+//        return $list;
+//    }
+
     public function createProject($attributes)
     {
         return $this->projectRepository->create($attributes);

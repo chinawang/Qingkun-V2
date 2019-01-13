@@ -75,20 +75,21 @@
                         <a class="nav-link" href="{{ url('/preview') }}">首页</a>
                     </li>
                     <li class="nav-item">
-                        <a id="project-link" class="nav-link" href="{{ url('/projects/plan') }}">规划设计</a>
+                        <a id="project-link" class="nav-link" href="{{ url('/projects/type') }}">项目</a>
                     </li>
                     <li class="nav-item">
-                        <a id="project-link" class="nav-link" href="{{ url('/projects/architecture') }}">建筑设计</a>
+                        <a class="nav-link" href="{{ url('/expertise') }}">专长</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/employees') }}">专家介绍</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/about') }}">关于我们</a>
+                        <a class="nav-link" href="{{ url('/employees') }}">专家</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/jobs') }}">工作机会</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/about') }}">关于我们</a>
+                    </li>
+
                 </ul>
 
                 <!-- Right Side Of Navbar -->

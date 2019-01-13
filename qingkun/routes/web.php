@@ -357,12 +357,12 @@ Route::get('/test/about', function () {
 
 
 //首页
-Route::get('/', function () {
+Route::get('/preview', function () {
     return view('front/coding');
 });
 
 //首页
-Route::get('/preview', 'Front\HomeController@homeData');
+Route::get('/', 'Front\HomeController@homeData');
 
 //新闻详情
 Route::get('/news/detail/{news_id}', 'Front\HomeController@newsInfo');
@@ -371,7 +371,10 @@ Route::get('/news/detail/{news_id}', 'Front\HomeController@newsInfo');
 Route::get('/award/detail/{award_id}', 'Front\HomeController@awardInfo');
 
 //项目列表
-//Route::get('/projects', 'Front\ProjectController@projectData');
+Route::get('/projects', 'Front\ProjectController@projectData');
+
+//类型列表
+Route::get('/projects/type', 'Front\ProjectController@typeData');
 
 //规划设计项目列表
 Route::get('/projects/{flag}', 'Front\ProjectController@projectData');
@@ -381,6 +384,9 @@ Route::get('/projects/{flag}', 'Front\ProjectController@projectData');
 
 //项目详情
 Route::get('/project/detail/{project_id}', 'Front\ProjectController@projectInfo');
+
+//专长
+Route::get('/expertise', 'Front\ExpertiseController@expertiseData');
 
 //人员列表
 Route::get('/employees', 'Front\EmployeeController@employeeData');

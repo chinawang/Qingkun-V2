@@ -53,6 +53,12 @@ class ExpertiseLogic extends Logic
         return $expertiseList;
     }
 
+    public function getAllExpertisesBy($conditions)
+    {
+        $expertiseList = $this->expertiseRepository->getBy($conditions);
+        return $expertiseList;
+    }
+
     public function createExpertise($attributes)
     {
         return $this->expertiseRepository->create($attributes);
