@@ -29,10 +29,13 @@ class ExpertiseController extends Controller
         $this->expertiseValidation = $expertiseValidation;
     }
 
+    public function typeData()
+    {
+        return view('front.online.expertiseType');
+    }
+
     public function expertiseDatasByType($type)
     {
-        $conditions = [];
-
         $conditions = ['delete_process' => 0,'type' => $type];
 
         $expertises = $this->expertiseLogic->getAllExpertisesBy($conditions);

@@ -385,8 +385,10 @@ Route::get('/projects/{flag}', 'Front\ProjectController@projectData');
 //项目详情
 Route::get('/project/detail/{project_id}', 'Front\ProjectController@projectInfo');
 
+//专长分类
+Route::get('/expertise/type', 'Front\ExpertiseController@typeData');
 //专长
-Route::get('/expertise', 'Front\ExpertiseController@expertiseData');
+Route::get('/expertise/{type}', 'Front\ExpertiseController@expertiseDatasByType');
 
 //人员列表
 Route::get('/employees', 'Front\EmployeeController@employeeData');
