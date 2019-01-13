@@ -44,7 +44,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" >
         <div class="container">
             <div class="navbar-header">
 
