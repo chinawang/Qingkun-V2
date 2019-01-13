@@ -70,7 +70,7 @@ class ExpertiseValidation extends Validation
             throw new BadRequestException($validator->errors());
         }
 
-        $expertise= $this->expertiseLogic->findPost($expertiseId);
+        $expertise= $this->expertiseLogic->findExpertise($expertiseId);
         if($expertise->id != $expertiseId) {
             throw new ForbiddenException();
         }
