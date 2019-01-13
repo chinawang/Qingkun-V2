@@ -2,24 +2,23 @@
 /**
  * Created by PhpStorm.
  * User: wangyx
- * Date: 2018/8/12
- * Time: 15:46
+ * Date: 2019/1/13
+ * Time: 15:54
  */
 
-namespace App\Repositories\Article;
+namespace App\Repositories\Type;
 
-
-use App\Models\News\NewsModel;
+use App\Models\Type\TypeModel;
 use Support\Repository\Repository;
 
-class NewsRepository extends Repository
+class TypeRepository extends Repository
 {
     /**
      * @return string
      */
     protected function model()
     {
-        return NewsModel::class;
+        return TypeModel::class;
     }
 
     /**
@@ -63,7 +62,7 @@ class NewsRepository extends Repository
     public function getGroupBy($conditions, array $with = [], array $fields = ['*'])
     {
         return $this->model->where($conditions)
-            ->orderBy('_id')
+            ->orderBy('id')
             ->with($with)
             ->get($fields);
     }

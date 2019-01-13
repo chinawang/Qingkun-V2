@@ -163,6 +163,73 @@ Route::post('/banner/delete/{banner_id}','Banner\BannerController@deleteBanner')
 
 
 /**
+ *专长相关
+ */
+
+//专长列表
+Route::get('/expertise/lists', 'Expertise\ExpertiseController@expertiseList');
+
+//专长详情
+Route::get('/expertise/info/{expertise_id}','Expertise\ExpertiseController@showExpertiseForm');
+
+//专长创建保存
+Route::get('/expertise/add','Expertise\ExpertiseController@showAddExpertiseForm');
+Route::post('/expertise/store','Expertise\ExpertiseController@storeNewExpertise');
+
+//专长编辑更新
+Route::get('/expertise/edit/{expertise_id}','Expertise\ExpertiseController@showUpdateExpertiseForm');
+Route::post('/expertise/update/{expertise_id}','Expertise\ExpertiseController@updateExpertise');
+
+//删除专长
+Route::post('/expertise/delete/{expertise_id}','Expertise\ExpertiseController@deleteExpertise');
+
+
+/**
+ *Type相关
+ */
+
+//Type列表
+Route::get('/type/lists', 'Type\TypeController@typeList');
+
+//Type详情
+Route::get('/type/info/{type_id}','Type\TypeController@showTypeForm');
+
+//Type创建保存
+Route::get('/type/add','Type\TypeController@showAddTypeForm');
+Route::post('/type/store','Type\TypeController@storeNewType');
+
+//Type编辑更新
+Route::get('/type/edit/{type_id}','Type\TypeController@showUpdateTypeForm');
+Route::post('/type/update/{type_id}','Type\TypeController@updateType');
+
+//删除Type
+Route::post('/type/delete/{type_id}','Type\TypeController@deleteType');
+
+
+
+/**
+ *Provence相关
+ */
+
+//Provence列表
+Route::get('/provence/lists', 'Provence\ProvenceController@provenceList');
+
+//Provence详情
+Route::get('/provence/info/{provence_id}','Provence\ProvenceController@showProvenceForm');
+
+//Provence创建保存
+Route::get('/provence/add','Provence\ProvenceController@showAddProvenceForm');
+Route::post('/provence/store','Provence\ProvenceController@storeNewProvence');
+
+//Provence编辑更新
+Route::get('/provence/edit/{provence_id}','Provence\ProvenceController@showUpdateProvenceForm');
+Route::post('/provence/update/{provence_id}','Provence\ProvenceController@updateProvence');
+
+//删除Provence
+Route::post('/provence/delete/{provence_id}','Provence\ProvenceController@deleteProvence');
+
+
+/**
  *Job相关
  */
 

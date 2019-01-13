@@ -16,6 +16,8 @@ class CreateTypesTable extends Migration
         Schema::create('types', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable()->comment('名称');
+            $table->string('photo')->nullable()->comment('图片');
+            $table->tinyInteger('delete_process')->default(0)->comment('是否删除');
             $table->timestamps();
         });
     }
