@@ -1,15 +1,14 @@
 .navbar {
-    background-color: rgba(0,0,0,0);
     height: 100%;
     box-shadow: 0 1px 4px rgba(0,0,0,.1);;
 
     /*box-shadow: 0px 0px 20px rgba(0, 0, 0, .10);*/
 }
 
-.navbar :hover {
-    background-color: #000;
-    transition: background-color .6s;
-}
+/*.navbar :hover {*/
+    /*background-color: #000;*/
+    /*transition: background-color .6s;*/
+/*}*/
 
 .navbar > .container {
     max-width: 90%;
@@ -46,7 +45,6 @@
     padding-right: 16px;
     text-align: center;
     font-size: 16px;
-    color: #fff;
     font-family: 'Heiti SC';
 }
 
