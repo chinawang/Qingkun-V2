@@ -73,7 +73,7 @@
                                     @foreach ($types as $type)
                                         <label class="checkbox-inline">
                                             <input name="types[]" type="checkbox" id="inlineCheckbox{{$type['id']}}"
-                                                   value="{{$type['id']}}" {{!in_array($type['id'], $assignTypeIDs)?:' checked'}}>{{$type['name']}}
+                                                   value="{{$type['id']}}">{{$type['name']}}
                                         </label>
                                     @endforeach
                                 </div>

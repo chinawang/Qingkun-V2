@@ -2,24 +2,61 @@
 /**
  * Created by PhpStorm.
  * User: wangyx
- * Date: 2018/8/12
- * Time: 15:46
+ * Date: 2019/1/13
+ * Time: 18:25
  */
 
 namespace App\Repositories\Project;
-
-
-use App\Models\Projects\ProjectModel;
+use App\Models\Projects\ProjectTypeModel;
 use Support\Repository\Repository;
 
-class ProjectRepository extends Repository
+
+class ProjectTypeRepository extends Repository
 {
     /**
      * @return string
      */
     protected function model()
     {
-        return ProjectModel::class;
+        return ProjectTypeModel::class;
+    }
+
+    /**
+     * 新增角色权限
+     *
+     * @param $roleID
+     * @param array $permissionIDs
+     * @return int
+     */
+    public function addTypes($projectID, array $typeIDs)
+    {
+        $attributes = [];
+
+        array_map(function($typeID) use ($projectID, &$attributes) {
+            array_push($attributes, [
+                'project_id' => $projectID,
+                'type_id' => $typeID,
+            ]);
+        }, $typeIDs);
+
+        return $this->insert($attributes);
+    }
+
+    /**
+     * 删除角色权限
+     *
+     * @param $roleID
+     * @param array $permissionIDs
+     * @return int
+     */
+    public function deleteTypes($projectID, array $typeIDs)
+    {
+        return $this->model->where('project_id', $projectID)->whereIn('type_id', $typeIDs)->delete();
+    }
+
+    public function deleteProjectAllTypes($projectID)
+    {
+        return $this->model->where('project_id', $projectID)->delete();
     }
 
     /**
@@ -58,31 +95,4 @@ class ProjectRepository extends Repository
             ->orderBy($orderColumn, $orderDirection)
             ->paginate($size, $columns = ['*'], $pageName = 'page', $cursorPage);
     }
-
-
-    public function getGroupBy($conditions, array $with = [], array $fields = ['*'])
-    {
-        return $this->model->where($conditions)
-            ->orderBy('station_id')
-            ->with($with)
-            ->get($fields);
-    }
-
-    /**
-     * 逻辑删除
-     *
-     * @param $ID
-     * @return mixed
-     */
-    public function deleteByFlag($ID)
-    {
-        $conditions['delete_process'] = 1;
-        return $this->model->where($this->model->getKeyName(), $ID)->update($conditions);
-    }
-
-    public function insertGetID($attributes)
-    {
-        return $this->model->insertGetId($attributes);
-    }
-
 }

@@ -6,7 +6,11 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Http\Logic\Project\ProjectLogic;
+use App\Http\Logic\Provence\ProvenceLogic;
+use App\Http\Logic\Type\TypeLogic;
 use App\Http\Validations\Project\ProjectValidation;
+use App\Http\Validations\Project\ProjectTypeValidation;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
@@ -14,15 +18,22 @@ use Illuminate\Support\Facades\DB;
 class ProjectController extends Controller
 {
     protected $projectLogic;
+    protected $provenceLogic;
+    protected $typeLogic;
 
     protected $projectValidation;
+    protected $projectTypeValidation;
 
-    public function __construct(ProjectLogic $projectLogic,ProjectValidation $projectValidation)
+    public function __construct(ProjectLogic $projectLogic,ProvenceLogic $provenceLogic,TypeLogic $typeLogic,
+                                ProjectValidation $projectValidation,ProjectTypeValidation $projectTypeValidation)
     {
         $this->middleware('auth');
 
         $this->projectLogic = $projectLogic;
+        $this->provenceLogic = $provenceLogic;
+        $this->typeLogic = $typeLogic;
         $this->projectValidation = $projectValidation;
+        $this->projectTypeValidation = $projectTypeValidation;
     }
 
     /**
@@ -32,7 +43,10 @@ class ProjectController extends Controller
      */
     public function showAddProjectForm()
     {
-        return view('project.addProject');
+        $provences = $this->provenceLogic->getAllProvences();
+        $types = $this->typeLogic->getAllTypes();
+        $param = ['provences' => $provences,'types' => $types];
+        return view('project.addProject',$param);
     }
 
     /**
@@ -44,13 +58,17 @@ class ProjectController extends Controller
     public function showUpdateProjectForm($projectID)
     {
         $project = $this->projectLogic->findProject($projectID);
-        $param = ['project' => $project];
+        $provences = $this->provenceLogic->getAllProvences();
+        $types = $this->typeLogic->getAllTypes();
+        $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($projectID);
+
+        $param = ['project' => $project,'provences' => $provences,'types' => $types,'assignTypeIDs' => $assignTypeIDs];
         return view('project.updateProject',$param);
     }
 
     public function showProjectForm($projectID)
     {
-        $project = $this->jobInfo($projectID);
+        $project = $this->projectInfo($projectID);
         $param = ['project' => $project];
         return view('project.info',$param);
     }
@@ -64,6 +82,13 @@ class ProjectController extends Controller
     public function projectInfo($projectID)
     {
         $project = $this->projectLogic->findProject($projectID);
+        $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project['id']);
+        $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
+        $project['assignTypes'] = $assignTypes;
+
+        $provence = $this->provenceLogic->findProvence($project['provence']);
+        $project['provence_name'] = $provence['name'];
+
         return $project;
     }
 
@@ -81,6 +106,16 @@ class ProjectController extends Controller
         $orderDirection  = array_get($input, 'order_direction', 'asc');
         $pageSize        = array_get($input, 'page_size', 20);
         $projectPaginate = $this->projectLogic->getProjects($pageSize,$orderColumn,$orderDirection,$cursorPage);
+
+        foreach ($projectPaginate as $project) {
+            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project['id']);
+            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
+            $provence = $this->provenceLogic->findProvence($project['provence']);
+
+            $project['provence_name'] = $provence['name'];
+            $project['assignTypes'] = $assignTypes;
+        }
+
         $param = ['projects' => $projectPaginate];
 
         //记录Log
@@ -97,7 +132,14 @@ class ProjectController extends Controller
     public function storeNewProject()
     {
         $input = $this->projectValidation->storeNewProject();
-        $result = $this->projectLogic->createProject($input);
+
+        $inputType = $this->projectTypeValidation->setProjectType();
+
+        $typeIDs = $inputType['types'];
+
+        $projectID = $this->projectLogic->insertGetID($input);
+
+        $result = $this->projectLogic->setProjectTypes($projectID,$typeIDs);
 
         if($result)
         {
@@ -106,6 +148,8 @@ class ProjectController extends Controller
                 'message'   => '',
                 'level'     => 'success'
             ]);
+
+
 
             //记录Log
             app('App\Http\Logic\Log\LogLogic')->createLog(['name' => Auth::user()->name,'log' => '新增了项目信息']);
@@ -132,6 +176,10 @@ class ProjectController extends Controller
     public function updateProject($projectID)
     {
         $input = $this->projectValidation->updateProject($projectID);
+        $inputType = $this->projectTypeValidation->setProjectType();
+
+        $typeIDs = $inputType['types'];
+
         $result = $this->projectLogic->updateProject($projectID,$input);
 
 //        return $input;
@@ -143,6 +191,8 @@ class ProjectController extends Controller
                 'message'   => '',
                 'level'     => 'success'
             ]);
+
+            $resultType = $this->projectLogic->setProjectTypes($projectID,$typeIDs);
 
             //记录Log
             app('App\Http\Logic\Log\LogLogic')->createLog(['name' => Auth::user()->name,'log' => '编辑了项目信息']);
@@ -177,6 +227,8 @@ class ProjectController extends Controller
                 'level'     => 'success'
             ]);
 
+            $resultType = $this->projectLogic->deleteProjectAllTypes($projectID);
+
             //记录Log
             app('App\Http\Logic\Log\LogLogic')->createLog(['name' => Auth::user()->name,'log' => '删除了项目信息']);
         }
@@ -195,6 +247,12 @@ class ProjectController extends Controller
     public function getAllProjects()
     {
         $projectList = $this->projectLogic->getAllProjects();
+
+        foreach ($projectList as $project) {
+            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project['id']);
+            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
+            $project['assignTypes'] = $assignTypes;
+        }
 
         return $projectList;
     }
