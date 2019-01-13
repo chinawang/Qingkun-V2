@@ -25,6 +25,12 @@
                                     <h4>项目管理</h4>
                                 </a>
                             </li>
+                            <li class="expertise">
+                                <a href="/expertise/lists" class="menu-item">
+                                    <img class="menu-icon" src="/img/home/large/expertise.png">
+                                    <h4>专长管理</h4>
+                                </a>
+                            </li>
                             <li class="job">
                                 <a href="/job/lists" class="menu-item">
                                     <img class="menu-icon" src="/img/home/large/job.png">
@@ -53,6 +59,18 @@
                                 <a href="/news/lists" class="menu-item">
                                     <img class="menu-icon" src="/img/home/large/news.png">
                                     <h4>新闻管理</h4>
+                                </a>
+                            </li>
+                            <li class="type">
+                                <a href="/type/lists" class="menu-item">
+                                    <img class="menu-icon" src="/img/home/large/type.png">
+                                    <h4>项目类型管理</h4>
+                                </a>
+                            </li>
+                            <li class="provence">
+                                <a href="/provence/lists" class="menu-item">
+                                    <img class="menu-icon" src="/img/home/large/provence.png">
+                                    <h4>地区管理</h4>
                                 </a>
                             </li>
                         </ul>

@@ -71,16 +71,32 @@
                                 <label for="type" class="col-md-4 control-label">建筑类型(选填)</label>
 
                                 <div class="col-md-6">
-                                    <input id="type" type="text" class="form-control" name="type"
-                                           value="{{ $project['type'] }}" placeholder="请输入建筑类型" >
+                                    @foreach ($types as $type)
+                                        <label class="checkbox-inline">
+                                            <input name="types[]" type="checkbox" id="inlineCheckbox{{$type['id']}}"
+                                                   value="{{$type['id']}}" {{!in_array($type['id'], $assignTypeIDs)?:' checked'}}>{{$type['name']}}
+                                        </label>
+                                    @endforeach
+                                </div>
+                            </div>
 
-                                    @if ($errors->has('type'))
+                            <div class="form-group{{ $errors->has('provence') ? ' has-error' : '' }}">
+                                <label for="provence" class="col-md-4 control-label">地区(省)</label>
+
+                                <div class="col-md-6">
+                                    <select class="form-control" id="select" name="provence" required>
+                                        @foreach ($provences as $provence)
+                                            <option value="{{ $provence['id'] }}" {{$project['provence'] == $provence['id'] ? 'selected="selected"' : ''}}>{{ $provence['name'] }}</option>
+                                        @endforeach
+                                    </select>
+                                    @if ($errors->has('provence'))
                                         <span class="help-block">
-                                        <strong>{{ $errors->first('type') }}</strong>
+                                        <strong>{{ $errors->first('provence') }}</strong>
                                     </span>
                                     @endif
                                 </div>
                             </div>
+
 
                             <div class="form-group{{ $errors->has('address') ? ' has-error' : '' }}">
                                 <label for="address" class="col-md-4 control-label">地址(选填)</label>
