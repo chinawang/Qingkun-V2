@@ -78,7 +78,7 @@
                         <a id="project-link" class="nav-link" href="{{ url('/projects/type') }}">项目</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/expertise') }}">专长</a>
+                        <a class="nav-link" href="{{ url('/expertise/type') }}">专长</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/employees') }}">专家</a>
