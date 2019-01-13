@@ -117,7 +117,7 @@ class ProjectLogic extends Logic
      */
     public function getTypeIDsByProjectID($projectId)
     {
-        $projectTypes = $this->getRolePermissions($projectId);
+        $projectTypes = $this->getProjectTypes($projectId);
 //        $permissionIDs = array_column($rolePermissions,'permission_id');
         $typeIDs = array();
 
@@ -134,7 +134,7 @@ class ProjectLogic extends Logic
      * @return \Illuminate\Database\Eloquent\Collection
      *
      */
-    public function getPermissionsByRole($projectId)
+    public function getTypesByProject($projectId)
     {
         $typeIDs = $this->getTypeIDsByProjectID($projectId);
         $types = $this->typeRepository->get($typeIDs);
