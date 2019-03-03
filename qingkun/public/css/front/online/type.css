@@ -95,17 +95,12 @@
 }
 
 
-.view-img > img:hover {
+.view-img:hover {
     transform: scale(1.02);
 }
 
-.view-header{
-    position: absolute;
-    top: 60px;
-    left: 30px;
-}
 
-.view-header > span{
+.view-text{
     font-size: 26px;
     font-size: 2.6rem;
     line-height: 34px;

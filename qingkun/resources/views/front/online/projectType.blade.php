@@ -26,12 +26,8 @@
                     @foreach ($types as $type)
                 <li class="view-content">
                     <a href="/projects/{{ $type['id'] }}" class="view-item">
-                        <div class="view-img">
-                            <img  src="{{ $type['photo'] }}">
-                        </div>
-                        <div class="view-header">
-                            <span>{{ $type['name'] }}</span>
-                        </div>
+                        <img class="view-img" src="{{ $type['photo'] }}">
+                        <span class="view-text">{{ $type['name'] }}</span>
 
                     </a>
                 </li>
