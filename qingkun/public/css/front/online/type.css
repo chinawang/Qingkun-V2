@@ -1,7 +1,7 @@
 
 .top-bar {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 48px;
@@ -52,7 +52,8 @@
 
 .view-grid {
     padding: 0;
-    margin-top: 40px;
+    margin-top: 30px;
+    background-color: #000000;
 }
 
 .view-list {
@@ -69,7 +70,7 @@
     /*margin-top: -40px;*/
     width: calc(50% - .5px);
     margin-left: .5px;
-    margin-top: .5px;
+    margin-top: 1px;
 }
 
 .view-item {
@@ -103,8 +104,8 @@
 
 .view-text{
     position: absolute;
-    bottom: 20px;
-    left: 30px;
+    bottom: 30px;
+    left: 48px;
     font-size: 26px;
     font-size: 2.6rem;
     line-height: 34px;
