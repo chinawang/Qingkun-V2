@@ -356,7 +356,7 @@ Route::get('/test/about', function () {
 });
 
 
-//首页
+//开发中
 Route::get('/preview', function () {
     return view('front/coding');
 });

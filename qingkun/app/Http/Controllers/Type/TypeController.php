@@ -51,7 +51,7 @@ class TypeController extends Controller
     {
         $type = $this->typeLogic->findType($typeID);
         $param = ['type' => $type];
-        return view('type.updateTypes',$param);
+        return view('type.updateType',$param);
     }
 
     public function showTypeForm($typeID)
