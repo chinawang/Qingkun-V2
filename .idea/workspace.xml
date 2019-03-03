@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed515664-d93a-48a3-8c33-5c34ec36e6f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qingkun/app/Http/Controllers/Type/TypeController.php" afterPath="$PROJECT_DIR$/qingkun/app/Http/Controllers/Type/TypeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qingkun/resources/views/front/online/projectType.blade.php" afterPath="$PROJECT_DIR$/qingkun/resources/views/front/online/projectType.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qingkun/routes/web.php" afterPath="$PROJECT_DIR$/qingkun/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/qingkun/app/Http/Validations/Type/TypeValidation.php" afterPath="$PROJECT_DIR$/qingkun/app/Http/Validations/Type/TypeValidation.php" />
     </list>
     <ignored path="Qingkun-V2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,11 +64,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TypeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qingkun/app/Http/Controllers/Type/TypeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="139" column="42" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeValidation.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/qingkun/app/Http/Validations/Type/TypeValidation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeLogic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qingkun/app/Http/Logic/Type/TypeLogic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -108,7 +127,6 @@
         <option value="$PROJECT_DIR$/qingkun/app/Repositories/Expertise/ExpertiseRepository.php" />
         <option value="$PROJECT_DIR$/qingkun/app/Repositories/Provence/Provence.php" />
         <option value="$PROJECT_DIR$/qingkun/app/Repositories/Provence/ProvenceRepository.php" />
-        <option value="$PROJECT_DIR$/qingkun/app/Http/Validations/Type/TypeValidation.php" />
         <option value="$PROJECT_DIR$/qingkun/app/Http/Logic/Type/TypeLogic.php" />
         <option value="$PROJECT_DIR$/qingkun/app/Http/Logic/Provence/ProvenceLogic.php" />
         <option value="$PROJECT_DIR$/qingkun/app/Http/Logic/Expertise/Expertise.php" />
@@ -134,6 +152,7 @@
         <option value="$PROJECT_DIR$/qingkun/routes/web.php" />
         <option value="$PROJECT_DIR$/qingkun/resources/views/front/online/projectType.blade.php" />
         <option value="$PROJECT_DIR$/qingkun/app/Http/Controllers/Type/TypeController.php" />
+        <option value="$PROJECT_DIR$/qingkun/app/Http/Validations/Type/TypeValidation.php" />
       </list>
     </option>
   </component>
@@ -483,12 +502,12 @@
       <updated>1547348075741</updated>
       <workItem from="1547348081405" duration="30509000" />
       <workItem from="1547959976189" duration="188000" />
-      <workItem from="1551616850350" duration="907000" />
+      <workItem from="1551616850350" duration="1271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31604000" />
+    <option name="totallyTimeSpent" value="31968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -540,20 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qingkun/app/Http/Logic/Type/TypeLogic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/qingkun/app/Http/Validations/Type/TypeValidation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -753,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qingkun/support/Repository/Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="161" column="20" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qingkun/app/Repositories/Project/ProjectRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -889,10 +887,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/qingkun/support/Repository/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qingkun/app/Http/Logic/Type/TypeLogic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/qingkun/app/Http/Controllers/Type/TypeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="139" column="42" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qingkun/app/Http/Validations/Type/TypeValidation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
           <folding />
         </state>
       </provider>

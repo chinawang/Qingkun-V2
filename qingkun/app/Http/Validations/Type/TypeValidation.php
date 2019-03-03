@@ -66,7 +66,7 @@ class TypeValidation extends Validation
             throw new BadRequestException($validator->errors());
         }
 
-        $type= $this->typeLogic->findPost($typeId);
+        $type= $this->typeLogic->findType($typeId);
         if($type->id != $typeId) {
             throw new ForbiddenException();
         }
