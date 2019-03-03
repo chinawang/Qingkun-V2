@@ -27,7 +27,12 @@
                 <li class="view-content">
                     <a href="/projects/{{ $type['id'] }}" class="view-item">
                         <img class="view-img" src="{{ $type['photo'] }}">
-                        <span>{{ $type['name'] }}</span>
+                        <div class="view-header">
+                            <div class="view-header-wrapper">
+                                <span class="view-header-title">{{ $type['name'] }}</span>
+                            </div>
+                        </div>
+
                     </a>
                 </li>
                     @endforeach
