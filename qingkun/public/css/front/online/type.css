@@ -4,14 +4,16 @@
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 48px;
+    padding: 10px 48px;
     background: #FFFFFF;
+
 }
 
 .top-title {
     font-size: 21px;
     font-size: 2.1rem;
-    line-height: 45px;
+    float: left;
+    /*line-height: 45px;*/
 }
 
 .top-all {
@@ -34,6 +36,9 @@
     letter-spacing: 0.5px;
     line-height: 19px;
     padding: 7px 18px;
-    margin: 0;
+
     text-decoration: none;
+
+    float: right;
+    margin-top: 20px;
 }
