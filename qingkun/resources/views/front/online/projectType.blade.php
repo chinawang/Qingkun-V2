@@ -19,6 +19,21 @@
             <h1 class="top-title">项目类型</h1>
             <a href="/projects" class="top-all">浏览所有项目</a>
         </div>
+
+        <div class="view-grid col-md-12 col-md-offset-0">
+            <ul class="view-list">
+                @if (!empty($types[0]))
+                    @foreach ($types as $type)
+                <li class="view-content">
+                    <a href="/projects/{{ $type['id'] }}" class="view-item">
+                        <img class="view-img" src="{{ $type['photo'] }}">
+                        <span>{{ $type['name'] }}</span>
+                    </a>
+                </li>
+                    @endforeach
+                @endif
+            </ul>
+        </div>
     </div>
 
     {{--<footer class="footer-container">--}}
