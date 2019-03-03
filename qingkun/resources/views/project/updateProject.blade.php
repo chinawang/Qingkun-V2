@@ -295,6 +295,83 @@
                                 </div>
                             </div>
 
+                            <div class="form-group{{ $errors->has('photo_large_5') ? ' has-error' : '' }}">
+                                <label for="photo_large_5" class="col-md-4 control-label">图片6(选填)</label>
+
+                                <div class="col-md-6">
+                                    <input id="photo_large_6" type="text" class="form-control" name="photo_large_6"
+                                           value="{{ $project['photo_large_6'] }}" placeholder="请输入图片的链接" >
+
+                                    @if ($errors->has('photo_large_5'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_5') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('photo_large_7') ? ' has-error' : '' }}">
+                                <label for="photo_large_5" class="col-md-4 control-label">图片7(选填)</label>
+
+                                <div class="col-md-6">
+                                    <input id="photo_large_7" type="text" class="form-control" name="photo_large_7"
+                                           value="{{ $project['photo_large_7'] }}" placeholder="请输入图片的链接" >
+
+                                    @if ($errors->has('photo_large_7'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_7') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+
+                            <div class="form-group{{ $errors->has('photo_large_8') ? ' has-error' : '' }}">
+                                <label for="photo_large_8" class="col-md-4 control-label">图片8(选填)</label>
+
+                                <div class="col-md-6">
+                                    <input id="photo_large_8" type="text" class="form-control" name="photo_large_8"
+                                           value="{{ $project['photo_large_8'] }}" placeholder="请输入图片的链接" >
+
+                                    @if ($errors->has('photo_large_8'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_8') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group{{ $errors->has('photo_large_9') ? ' has-error' : '' }}">
+                                <label for="photo_large_9" class="col-md-4 control-label">图片9(选填)</label>
+
+                                <div class="col-md-6">
+                                    <input id="photo_large_9" type="text" class="form-control" name="photo_large_9"
+                                           value="{{ $project['photo_large_9'] }}" placeholder="请输入图片的链接" >
+
+                                    @if ($errors->has('photo_large_9'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_9') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="form-group{{ $errors->has('photo_large_10') ? ' has-error' : '' }}">
+                                <label for="photo_large_10" class="col-md-4 control-label">图片10(选填)</label>
+
+                                <div class="col-md-6">
+                                    <input id="photo_large_10" type="text" class="form-control" name="photo_large_10"
+                                           value="{{ $project['photo_large_10'] }}" placeholder="请输入图片的链接" >
+
+                                    @if ($errors->has('photo_large_10'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_10') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
+
+
 
 
                             <div class="form-group">

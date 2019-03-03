@@ -337,8 +337,76 @@
                                     @endif
                                 </div>
                             </div>
+                            <div class="form-group{{ $errors->has('photo_large_5') ? ' has-error' : '' }}">
+                                <label for="photo_large_5" class="col-md-4 control-label">图片6(选填)</label>
 
+                                <div class="col-md-6">
+                                    <input id="photo_large_6" type="text" class="form-control" name="photo_large_6"
+                                           value="{{ old('photo_large_6') }}" placeholder="请输入图片的链接" >
 
+                                    @if ($errors->has('photo_large_5'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_5') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="form-group{{ $errors->has('photo_large_5') ? ' has-error' : '' }}">
+                                <label for="photo_large_5" class="col-md-4 control-label">图片7(选填)</label>
+
+                                <div class="col-md-6">
+                                    <input id="photo_large_7" type="text" class="form-control" name="photo_large_7"
+                                           value="{{ old('photo_large_7') }}" placeholder="请输入图片的链接" >
+
+                                    @if ($errors->has('photo_large_5'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_5') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="form-group{{ $errors->has('photo_large_5') ? ' has-error' : '' }}">
+                                <label for="photo_large_5" class="col-md-4 control-label">图片8(选填)</label>
+
+                                <div class="col-md-6">
+                                    <input id="photo_large_8" type="text" class="form-control" name="photo_large_8"
+                                           value="{{ old('photo_large_8') }}" placeholder="请输入图片的链接" >
+
+                                    @if ($errors->has('photo_large_5'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_5') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="form-group{{ $errors->has('photo_large_5') ? ' has-error' : '' }}">
+                                <label for="photo_large_5" class="col-md-4 control-label">图片9(选填)</label>
+
+                                <div class="col-md-6">
+                                    <input id="photo_large_9" type="text" class="form-control" name="photo_large_9"
+                                           value="{{ old('photo_large_9') }}" placeholder="请输入图片的链接" >
+
+                                    @if ($errors->has('photo_large_5'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_5') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="form-group{{ $errors->has('photo_large_5') ? ' has-error' : '' }}">
+                                <label for="photo_large_5" class="col-md-4 control-label">图片10(选填)</label>
+
+                                <div class="col-md-6">
+                                    <input id="photo_large_10" type="text" class="form-control" name="photo_large_10"
+                                           value="{{ old('photo_large_10') }}" placeholder="请输入图片的链接" >
+
+                                    @if ($errors->has('photo_large_5'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('photo_large_5') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
