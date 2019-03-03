@@ -72,7 +72,7 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/preview') }}">首页</a>
+                        <a class="nav-link" href="{{ url('/') }}">首页</a>
                     </li>
                     <li class="nav-item">
                         <a id="project-link" class="nav-link" href="{{ url('/projects/type') }}">项目</a>
