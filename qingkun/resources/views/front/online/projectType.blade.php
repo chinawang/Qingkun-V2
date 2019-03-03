@@ -6,7 +6,7 @@
     <link href="{{ asset('css/owl.theme.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.transitions.css') }}" rel="stylesheet">
 
-    <link href="{{ asset('css/front/online/project.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/front/online/type.css') }}" rel="stylesheet">
 @endsection
 
 @section('subtitle')
