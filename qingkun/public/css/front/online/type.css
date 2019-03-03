@@ -78,7 +78,7 @@
     /*height: 100%;*/
     overflow: hidden;
     text-decoration: none;
-    position: absolute;
+    /*position: absolute;*/
 }
 
 .view-item:hover{
