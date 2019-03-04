@@ -161,11 +161,11 @@
     text-align: center;
 }
 
-#bar-type:hover + #filter-type{
+#bar-type:hover  #filter-type{
     display: block;
 }
 
-#bar-area:hover + #filter-area{
+#bar-area:hover  #filter-area{
     display: block;
 }
 

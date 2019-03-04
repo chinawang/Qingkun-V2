@@ -60,23 +60,23 @@
                 <div class="bar-item" id="bar-type">
                     <span class="drop-title">所有项目类型</span>
                     <span class="glyphicon glyphicon-chevron-down"></span>
-                </div>
-                <div class="filter-panel" id="filter-type">
-                    <ul class="filter-list">
-                        <li class="filter-item">
-                            <p>所有项目类型</p>
-                            <input type="hidden" name="type_id" value="{{ 0 }}">
-                        </li>
-                        @foreach ($types as $type)
+                    <div class="filter-panel" id="filter-type">
+                        <ul class="filter-list">
                             <li class="filter-item">
-                                <p>{{ $type->name }}</p>
-                                <input type="hidden" name="type_id" value="{{ $type->id }}">
+                                <p>所有项目类型</p>
+                                <input type="hidden" name="type_id" value="{{ 0 }}">
                             </li>
-                        @endforeach
-                    </ul>
+                            @foreach ($types as $type)
+                                <li class="filter-item">
+                                    <p>{{ $type->name }}</p>
+                                    <input type="hidden" name="type_id" value="{{ $type->id }}">
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="dropdown bar-item" id="bar-area">
+                <div class=" bar-item" id="bar-area">
                     <span class="drop-title">所有区域</span>
                     <span class="glyphicon glyphicon-chevron-down"></span>
                     <div class="filter-panel" id="filter-area">
