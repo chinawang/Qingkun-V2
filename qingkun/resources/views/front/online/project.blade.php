@@ -17,7 +17,7 @@
     <div class="main">
         <div class="top-bar">
             <h1 class="top-title">项目类型</h1>
-            <span class="top-text">{{ $count }}个项目</span>
+            <h1 class="top-text">{{ $count }}个项目</h1>
         </div>
 
         <div class="view-grid col-md-12 col-md-offset-0">
