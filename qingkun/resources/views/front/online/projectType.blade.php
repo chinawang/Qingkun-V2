@@ -26,9 +26,9 @@
                     @foreach ($types as $type)
                 <li class="view-content">
                     <form class="form-horizontal" role="form" method="GET" action="/projects"
-                          style="margin-bottom: 10px">
+                           id="typeForm">
                         <input type="hidden" name="type_id" value="{{ $type['id'] }}">
-                    <a type="submit" href="" class="view-item">
+                    <a onclick="document:typeForm.submit()" class="view-item">
                         <img class="view-img" src="{{ $type['photo'] }}">
                         <span class="view-text">{{ $type['name'] }}</span>
                     </a>
