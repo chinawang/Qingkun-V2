@@ -89,24 +89,27 @@ class ProjectController extends Controller
 //                ->count();
         }
 
-//        $count = count($projects);
-//
-//        for($i=0;$i<count($projects);$i++){
-//            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($projects[$i]['id']);
-//            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
-//            $provence = $this->provenceLogic->findProvence($projects[$i]['provence']);
-//
-//            $projects[$i]['provence_name'] = $provence['name'];
-//            $projects[$i]['assignTypes'] = $assignTypes;
-//        }
-        foreach ($projects as $project) {
-            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project->id);
-            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
-            $provence = $this->provenceLogic->findProvence($project->provence);
 
-            $project->provence_name = $provence['name'];
-            $project->assignTypes = $assignTypes;
+        foreach ($projects as $key=>$value) {
+            $projects[$key] = (array)$value;
+
+            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($key['id']);
+            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
+            $provence = $this->provenceLogic->findProvence($key['provence']);
+
+            $key['provence_name'] = $provence['name'];
+            $key['assignTypes'] = $assignTypes;
         }
+
+
+//        foreach ($projects as $project) {
+//            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project->id);
+//            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
+//            $provence = $this->provenceLogic->findProvence($project->provence);
+//
+//            $project->provence_name = $provence['name'];
+//            $project->assignTypes = $assignTypes;
+//        }
 
         $param = ['projects' => $projects,'count' => count($projects),'type' => $typeID,'provence' => $provenceID];
 

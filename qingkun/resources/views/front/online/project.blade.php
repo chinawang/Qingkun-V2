@@ -25,10 +25,10 @@
                 @if (!empty($projects[0]))
                     @foreach ($projects as $project)
                         <li class="view-content">
-                                <a href="/project/detail/{{ $project->id }}" class="view-item">
-                                    <img class="view-img" src="{{ $project->photo_large_1 }}">
-                                    <span class="view-subtext">{{ $project->provence_name }}</span>
-                                    <span class="view-text">{{ $project->name }}</span>
+                                <a href="/project/detail/{{ $project['id'] }}" class="view-item">
+                                    <img class="view-img" src="{{ $project['photo_large_1'] }}">
+                                    <span class="view-subtext">{{ $project['provence_name'] }}</span>
+                                    <span class="view-text">{{ $project['name'] }}</span>
                                 </a>
                             </form>
                         </li>
