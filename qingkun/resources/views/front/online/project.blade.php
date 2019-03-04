@@ -16,143 +16,71 @@
 @section('content')
     <div class="main">
         <div class="top-bar">
-            {{--<div class="filter-bar">--}}
-                {{--<div class="dropdown bar-item">--}}
-                    {{--<span class="drop-title">所有项目类型</span>--}}
-                    {{--<span class="glyphicon glyphicon-chevron-down"></span>--}}
-                    {{--<div class="dropdown-content">--}}
-                        {{--<div class="content-item">--}}
-                            {{--<p>所有项目类型</p>--}}
-                            {{--<input type="hidden" name="type_id" value="{{ 0 }}">--}}
-                        {{--</div>--}}
-                        {{--@foreach ($types as $type)--}}
-                            {{--<div class="content-item">--}}
-                                {{--<p>{{ $type->name }}</p>--}}
-                                {{--<input type="hidden" name="type_id" value="{{ $type->id }}">--}}
-                            {{--</div>--}}
-                        {{--@endforeach--}}
-                    {{--</div>--}}
-
-                {{--</div>--}}
-
-                {{--<div class="dropdown bar-item">--}}
-                    {{--<span class="drop-title">所有区域</span>--}}
-                    {{--<span class="glyphicon glyphicon-chevron-down"></span>--}}
-                    {{--<div class="dropdown-content">--}}
-
-                        {{--<div class="content-item">--}}
-                            {{--<p>所有区域</p>--}}
-                            {{--<input type="hidden" name="provence_id" value="{{ 0 }}">--}}
-                        {{--</div>--}}
-                        {{--@foreach ($provences as $provence)--}}
-
-                            {{--<div class="content-item">--}}
-                                {{--<p>{{ $provence->name }}</p>--}}
-                                {{--<input type="hidden" name="provence_id" value="{{ $provence->id }}">--}}
-                            {{--</div>--}}
-
-                        {{--@endforeach--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-
-            {{--<div class="filter-bar">--}}
-                {{--<div class="bar-item" id="bar-type">--}}
-                    {{--<span class="drop-title">所有项目类型</span>--}}
-                    {{--<span class="glyphicon glyphicon-chevron-down"></span>--}}
-                    {{--<div class="filter-panel" id="filter-type">--}}
-                        {{--<ul class="filter-list">--}}
-                            {{--<li class="filter-item">--}}
-                                {{--<p>所有项目类型</p>--}}
-                                {{--<input type="hidden" name="type_id" value="{{ 0 }}">--}}
-                            {{--</li>--}}
-                            {{--@foreach ($types as $type)--}}
-                                {{--<li class="filter-item">--}}
-                                    {{--<p>{{ $type->name }}</p>--}}
-                                    {{--<input type="hidden" name="type_id" value="{{ $type->id }}">--}}
-                                {{--</li>--}}
-                            {{--@endforeach--}}
-                        {{--</ul>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-
-                {{--<div class=" bar-item" id="bar-area">--}}
-                    {{--<span class="drop-title">所有区域</span>--}}
-                    {{--<span class="glyphicon glyphicon-chevron-down"></span>--}}
-                    {{--<div class="filter-panel" id="filter-area">--}}
-                        {{--<ul class="filter-list">--}}
-                            {{--<li class="filter-item">--}}
-                                {{--<p>所有区域</p>--}}
-                                {{--<input type="hidden" name="provence_id" value="{{ 0 }}">--}}
-                            {{--</li>--}}
-                            {{--@foreach ($provences as $provence)--}}
-                                {{--<li class="filter-item">--}}
-                                    {{--<p>{{ $provence->name }}</p>--}}
-                                    {{--<input type="hidden" name="provence_id" value="{{ $provence->id }}">--}}
-                                {{--</li>--}}
-                            {{--@endforeach--}}
-                        {{--</ul>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-
-            <div class="filter-panle">
-                <div class="filter-content">
-                    <h1 class="filter-title">项目类型</h1>
-                    <ul class="filter-list">
-                        <li class="filter-item">
-                            <a>全部类型</a>
-                            <input type="hidden" name="type_id" value="{{ 0 }}">
-                        </li>
-                        @foreach ($types as $type)
-                            <li class="filter-item">
-                                <a>{{ $type->name }}</a>
-                                <input type="hidden" name="type_id" value="{{ $type->id }}">
-                            </li>
-                        @endforeach
-                    </ul>
-
+            <div class="filter-bar">
+                <div class="dropdown dropdown-selection bar-item">
+                    <div class="dropdown-trigger-container">
+                        <div class="dropdown-trigger" slot="dropdown-trigger">
+                            <div class="text">所有项目类型</div>
+                            <span class="caret"></span>
+                        </div>
+                    </div>
+                    <div class="dropdown-content-container slideY-transition" style="display: none">
+                        <div class="dropdown-content " slot="dropdown-content">
+                            @foreach ($types as $type)
+                                <div class="content-item">
+                                    <p>{{ $type->name }}</p>
+                                    <input type="hidden" name="type_id" value="{{ $type->id }}">
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
 
-                <div class="filter-content">
-                    <h1 class="filter-title">区域</h1>
-                    <ul class="filter-list">
-                        <li class="filter-item">
-                            <a>全部区域</a>
-                            <input type="hidden" name="provence_id" value="{{ 0 }}">
-                        </li>
-                        @foreach ($provences as $provence)
-                            <li class="filter-item">
-                                <a>{{ $provence->name }}</a>
-                                <input type="hidden" name="provence_id" value="{{ $provence->id }}">
-                            </li>
-                        @endforeach
-                    </ul>
 
+                <div class="dropdown dropdown-selection bar-item">
+                    <div class="dropdown-trigger-container">
+                        <div class="dropdown-trigger" slot="dropdown-trigger">
+                            <div class="text">所有区域</div>
+                            <span class="caret"></span>
+                        </div>
+                    </div>
+                    <div class="dropdown-content-container slideY-transition" style="display: none">
+                        <div class="dropdown-content " slot="dropdown-content">
+                            @foreach ($provences as $provence)
+
+                                <div class="content-item">
+                                    <p>{{ $provence->name }}</p>
+                                    <input type="hidden" name="provence_id" value="{{ $provence->id }}">
+                                </div>
+
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
-            <h1 class="top-text">{{ $count }}个项目</h1>
         </div>
 
-        <div class="view-grid col-md-12 col-md-offset-0">
-            <ul class="view-list">
-                @if (!empty($projects[0]))
-                    @foreach ($projects as $project)
-                        <li class="view-content">
-                            <a href="/project/detail/{{ $project->id }}" class="view-item">
-                                <img class="view-img" src="{{ $project->photo_large_1 }}?x-oss-process=style/type">
-                                <span class="view-subtext">{{ $project->provence_name }}</span>
-                                <span class="view-text">{{ $project->name }}</span>
-                            </a>
-                            </form>
-                        </li>
-                    @endforeach
-                @endif
-            </ul>
 
-        </div>
+        <h1 class="top-text">{{ $count }}个项目</h1>
+    </div>
+
+    <div class="view-grid col-md-12 col-md-offset-0">
+        <ul class="view-list">
+            @if (!empty($projects[0]))
+                @foreach ($projects as $project)
+                    <li class="view-content">
+                        <a href="/project/detail/{{ $project->id }}" class="view-item">
+                            <img class="view-img" src="{{ $project->photo_large_1 }}?x-oss-process=style/type">
+                            <span class="view-subtext">{{ $project->provence_name }}</span>
+                            <span class="view-text">{{ $project->name }}</span>
+                        </a>
+                        </form>
+                    </li>
+                @endforeach
+            @endif
+        </ul>
+
+    </div>
     </div>
 
     {{--<footer class="footer-container">--}}
