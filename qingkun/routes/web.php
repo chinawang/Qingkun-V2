@@ -374,7 +374,7 @@ Route::get('/award/detail/{award_id}', 'Front\HomeController@awardInfo');
 Route::get('/projects', 'Front\ProjectController@projectData');
 
 //按分类显示项目列表
-//Route::get('/projects/type/{type_id}', 'Front\ProjectController@projectData');
+//Route::get('/projects/type/{type_id}', 'Front\ProjectController@projectTypeData');
 
 //类型列表
 Route::get('/projects/type', 'Front\ProjectController@typeData');

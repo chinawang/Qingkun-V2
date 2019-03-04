@@ -15,7 +15,28 @@
 
 @section('content')
     <div class="main">
+        <div class="top-bar">
+            <h1 class="top-title">项目类型</h1>
+            <span class="top-text">{{ $count }}个项目</span>
+        </div>
 
+        <div class="view-grid col-md-12 col-md-offset-0">
+            <ul class="view-list">
+                @if (!empty($projects[0]))
+                    @foreach ($projects as $project)
+                        <li class="view-content">
+                                <a href="/project/detail/{{ $project['id'] }}" class="view-item">
+                                    <img class="view-img" src="{{ $project['photo_large_1'] }}">
+                                    <span class="view-subtext">{{ $project['provence_name'] }}</span>
+                                    <span class="view-text">{{ $project['name'] }}</span>
+                                </a>
+                            </form>
+                        </li>
+                    @endforeach
+                @endif
+            </ul>
+
+        </div>
     </div>
 
     {{--<footer class="footer-container">--}}

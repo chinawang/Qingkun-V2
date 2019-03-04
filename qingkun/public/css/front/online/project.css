@@ -1,183 +1,103 @@
-body {
-    background-color: #efefef;
-}
 
-.main {
-    padding: 0;
-    max-width: none;
-    margin-bottom: 60px;
-}
-
-.top-banner {
+.top-bar {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
+    padding: 30px 48px;
+    background: #FFFFFF;
+
 }
 
-
-.top-banner > img{
-    height: 560px;
-    width: 100%;
-}
-
-.top-text {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    z-index: 3;
-}
-
-.top-text > h3{
-    /*font-family: "Benton Sans Light", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;*/
-    font-style: normal;
-    font-stretch: normal;
-    font-size: 46px;
-    max-width: 750px;
-    line-height: 55px;
-    letter-spacing: 4px;
-    text-align: center;
-    margin: 0px auto 10px;
-}
-
-.top-text > p{
-    /*font-family: "Benton Sans", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;*/
-    font-family: inherit;
-    font-style: normal;
-    font-stretch: normal;
-    font-size: 16px;
-    font-weight: 400;
-    max-width: 750px;
-    line-height: 26px;
-    letter-spacing: 4px;
-    margin: 0px auto;
-}
-
-.overlay {
-    height: 560px;
-    margin-top: 80px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    background-color: rgba(0,0,0,.4);
-}
-
-#owl-banner {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#owl-banner .item {
-    display: block;
-}
-#owl-banner img {
-    display: block;
-    width: 100%;
-}
-
-.owl-theme .owl-controls .owl-page span{
-    width: 40px;
-    height: 6px;
-    background: #004995;
-}
-
-.row-card {
-
-    width: 1280px;
-    margin: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    margin-bottom: 60px;
-}
-
-.title-card {
-    padding-bottom: 20px;
-    padding-left: 10px;
-    text-align: left;
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: #0d1318;
-    font-family: 'Heiti SC';
-}
-
-.card {
-    width: 390px;
-    margin: 5px;
-    height: 330px;
+.top-title {
+    font-size: 21px;
+    font-size: 2.1rem;
     float: left;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    border-radius: 0.15rem;
-
+    font-weight: 400;
+    /*line-height: 45px;*/
 }
 
-.card-top {
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.card:hover {
-    box-shadow: 0 0px 36px rgba(0,0,0,.1);
-    -webkit-transition: all .15s ease;
-    transition: all .15s ease;
-}
-
-.card-main {
-    text-decoration:none;
-}
-
-.card-main:hover {
-    text-decoration:none;
-}
-
-.card-link {
+.top-text{
+    font-size: 12px;
+    font-size: 1.2rem;
+    font-weight: 200;
     float: right;
-    padding:10px;
 }
 
-.card-img {
-    height: 240px;
+.view-grid {
+    padding: 0;
+    margin-top: 30px;
+    background-color: #000000;
+}
+
+.view-list {
     width: 100%;
+    padding-left: 0px;
+}
+
+.view-list > li {
     display: block;
+    /*border: 1px solid #ffffff;*/
+    /*width: 50%;*/
+    /*text-align: center;*/
+    float: left;
+    /*margin-top: -40px;*/
+    width: calc(50% - .5px);
+    margin-left: .5px;
+    margin-top: 1px;
+}
+
+.view-item {
+    position: relative;
+    /*color: #2c3e50;*/
+    display: block;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    overflow: hidden;
+    text-decoration: none;
+
+}
+
+.view-item:hover{
+    text-decoration: none;
+}
+
+.view-img {
+    position: relative;
+
+    display: inline-block;
+    /*margin-bottom: -60px;*/
     transition: all 0.6s;
 }
 
-.card-img:hover {
-    transform: scale(1.2);
+
+.view-img:hover {
+    transform: scale(1.02);
 }
 
-.card-body {
-    padding-bottom: 0;
-    padding-top: 0;
-}
 
-.card-title {
-    font-size: 16px;
-    color: #0d1318;
-    letter-spacing: 2px;
-    font-family: 'Heiti SC';
-}
-
-.card-text {
-
+.view-subtext{
+    position: absolute;
+    bottom: 50px;
+    left: 48px;
     font-size: 14px;
-    color: #949494;
-    letter-spacing: 2px;
-    font-family: 'Heiti SC';
+    font-size: 1.4rem;
+    line-height: 34px;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
 
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
+.view-text{
+    position: absolute;
+    bottom: 30px;
+    left: 48px;
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 34px;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #fff;
 }

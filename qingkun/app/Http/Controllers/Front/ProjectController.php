@@ -78,7 +78,7 @@ class ProjectController extends Controller
             $project['assignTypes'] = $assignTypes;
         }
 
-        $param = ['projects' => $projects,'type' => $typeID,'provence' => $provenceID];
+        $param = ['projects' => $projects,'count' => count($projects),'type' => $typeID,'provence' => $provenceID];
 
         return view('front.online.project',$param);
     }

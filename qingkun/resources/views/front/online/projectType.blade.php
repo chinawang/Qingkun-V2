@@ -25,11 +25,14 @@
                 @if (!empty($types[0]))
                     @foreach ($types as $type)
                 <li class="view-content">
-                    <a href="/projects/{{ $type['id'] }}" class="view-item">
+                    <form class="form-horizontal" role="form" method="GET" action="/projects"
+                          style="margin-bottom: 10px">
+                        <input type="hidden" name="type_id" value="{{ $type['id'] }}">
+                    <a type="submit" href="" class="view-item">
                         <img class="view-img" src="{{ $type['photo'] }}">
                         <span class="view-text">{{ $type['name'] }}</span>
-
                     </a>
+                    </form>
                 </li>
                     @endforeach
                 @endif
