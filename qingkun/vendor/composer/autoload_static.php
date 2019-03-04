@@ -350,6 +350,7 @@ class ComposerStaticInit669c95193cab03cd306c11c2feb1a31f
 
     public static $classMap = array (
         'AddFlagToProjects' => __DIR__ . '/../..' . '/database/migrations/2018_09_05_090338_add_flag_to_projects.php',
+        'AddPhotoToProjectsTable' => __DIR__ . '/../..' . '/database/migrations/2019_03_03_132341_add_photo_to_projects_table.php',
         'AddStageToProjectsTable' => __DIR__ . '/../..' . '/database/migrations/2018_09_03_011056_add_stage_to_projects_table.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
@@ -361,6 +362,7 @@ class ComposerStaticInit669c95193cab03cd306c11c2feb1a31f
         'CreateLogsTable' => __DIR__ . '/../..' . '/database/migrations/2017_06_04_042933_create_logs_table.php',
         'CreateNewsTable' => __DIR__ . '/../..' . '/database/migrations/2018_08_11_153447_create_news_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreatePhotosTable' => __DIR__ . '/../..' . '/database/migrations/2019_03_04_132043_create_photos_table.php',
         'CreateProjectTypesTable' => __DIR__ . '/../..' . '/database/migrations/2019_01_13_070803_create_project_types_table.php',
         'CreateProjectsTable' => __DIR__ . '/../..' . '/database/migrations/2018_08_11_150429_create_projects_table.php',
         'CreateProvencesTable' => __DIR__ . '/../..' . '/database/migrations/2019_01_13_070609_create_provences_table.php',

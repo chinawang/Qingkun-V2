@@ -16,27 +16,27 @@
 @section('content')
     <div class="main">
 
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1 title-content">
-                <h1>{{ $project['name'] }}</h1>
-                <a href="javascript:history.back();" class="title-back" title="返回">
-                    <img class="back-icon" src="/img/return.png"
-                         onMouseOver="this.src='/img/return-blue.png'"
-                         onMouseOut="this.src='/img/return.png'"
-                    >
-                </a>
-            </div>
+        {{--<div class="row">--}}
+        {{--<div class="col-md-10 col-md-offset-1 title-content">--}}
+        {{--<h1>{{ $project['name'] }}</h1>--}}
+        {{--<a href="javascript:history.back();" class="title-back" title="返回">--}}
+        {{--<img class="back-icon" src="/img/return.png"--}}
+        {{--onMouseOver="this.src='/img/return-blue.png'"--}}
+        {{--onMouseOut="this.src='/img/return.png'"--}}
+        {{-->--}}
+        {{--</a>--}}
+        {{--</div>--}}
 
-            {{--<div class="col-md-10 col-md-offset-1 subtitle-content">--}}
-            {{--<span>{{ $project['abstract'] }}</span>--}}
-            {{--</div>--}}
+        {{--<div class="col-md-10 col-md-offset-1 subtitle-content">--}}
+        {{--<span>{{ $project['abstract'] }}</span>--}}
+        {{--</div>--}}
 
-        </div>
+        {{--</div>--}}
 
         <div id="owl-banner" class="owl-carousel">
             @if (!empty($project['photo_large_1']))
                 <a class="item">
-                    <img src="{{ $project['photo_large_1'] }}?x-oss-process=style/project_big" alt="">
+                    <img src="{{ $project['photo_large_1'] }}?" alt="">
                 </a>
             @else
                 <a class="item">
@@ -45,24 +45,58 @@
             @endif
             @if (!empty($project['photo_large_2']))
                 <a class="item">
-                    <img src="{{ $project['photo_large_2'] }}?x-oss-process=style/project_big" alt="">
+                    <img src="{{ $project['photo_large_2'] }}" alt="">
                 </a>
             @endif
             @if (!empty($project['photo_large_3']))
                 <a class="item">
-                    <img src="{{ $project['photo_large_3'] }}?x-oss-process=style/project_big" alt="">
+                    <img src="{{ $project['photo_large_3'] }}" alt="">
                 </a>
             @endif
             @if (!empty($project['photo_large_4']))
                 <a class="item">
-                    <img src="{{ $project['photo_large_4'] }}?x-oss-process=style/project_big" alt="">
+                    <img src="{{ $project['photo_large_4'] }}" alt="">
                 </a>
             @endif
             @if (!empty($project['photo_large_5']))
                 <a class="item">
-                    <img src="{{ $project['photo_large_5'] }}?x-oss-process=style/project_big" alt="">
+                    <img src="{{ $project['photo_large_5'] }}" alt="">
                 </a>
             @endif
+            @if (!empty($project['photo_large_6']))
+                <a class="item">
+                    <img src="{{ $project['photo_large_6'] }}" alt="">
+                </a>
+            @endif
+            @if (!empty($project['photo_large_7']))
+                <a class="item">
+                    <img src="{{ $project['photo_large_7'] }}" alt="">
+                </a>
+            @endif
+            @if (!empty($project['photo_large_8']))
+                <a class="item">
+                    <img src="{{ $project['photo_large_8'] }}" alt="">
+                </a>
+            @endif
+            @if (!empty($project['photo_large_9']))
+                <a class="item">
+                    <img src="{{ $project['photo_large_9'] }}" alt="">
+                </a>
+            @endif
+            @if (!empty($project['photo_large_10']))
+                <a class="item">
+                    <img src="{{ $project['photo_large_10'] }}" alt="">
+                </a>
+            @endif
+            <span class="view-subtext">{{ $project['provence_name'] }} , {{ $project['address'] }}</span>
+            <span class="view-text">{{ $project['name'] }}</span>
+            <div class="view-tag">
+                @foreach($project['assignTypes'] as $assignType)
+                    <a href="/projects/?type_id={{ $assignType['id'] }}" class="tag-item">
+                        {{ $assignType['name'] }}
+                    </a>
+                @endforeach
+            </div>
 
         </div>
 

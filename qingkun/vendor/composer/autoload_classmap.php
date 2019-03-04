@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddFlagToProjects' => $baseDir . '/database/migrations/2018_09_05_090338_add_flag_to_projects.php',
+    'AddPhotoToProjectsTable' => $baseDir . '/database/migrations/2019_03_03_132341_add_photo_to_projects_table.php',
     'AddStageToProjectsTable' => $baseDir . '/database/migrations/2018_09_03_011056_add_stage_to_projects_table.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
@@ -18,6 +19,7 @@ return array(
     'CreateLogsTable' => $baseDir . '/database/migrations/2017_06_04_042933_create_logs_table.php',
     'CreateNewsTable' => $baseDir . '/database/migrations/2018_08_11_153447_create_news_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreatePhotosTable' => $baseDir . '/database/migrations/2019_03_04_132043_create_photos_table.php',
     'CreateProjectTypesTable' => $baseDir . '/database/migrations/2019_01_13_070803_create_project_types_table.php',
     'CreateProjectsTable' => $baseDir . '/database/migrations/2018_08_11_150429_create_projects_table.php',
     'CreateProvencesTable' => $baseDir . '/database/migrations/2019_01_13_070609_create_provences_table.php',
