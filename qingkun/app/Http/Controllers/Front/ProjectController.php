@@ -105,13 +105,14 @@ class ProjectController extends Controller
 
 
         foreach ($projects as $project) {
-            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project->id);
+            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project['id']);
             $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
             $provence = $this->provenceLogic->findProvence($project->provence);
 
             $project->provence_name = $provence['name'];
             $project->assignTypes = $assignTypes;
         }
+
 
         $param = ['projects' => $projects,'count' => count($projects),'type' => $typeID,'provence' => $provenceID];
 
