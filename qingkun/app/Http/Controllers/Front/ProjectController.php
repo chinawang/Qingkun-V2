@@ -89,18 +89,26 @@ class ProjectController extends Controller
 //                ->count();
         }
 
-        $count = count($projects);
+//        $count = count($projects);
 
-        foreach ($projects as $project) {
-            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project['id']);
+        for($i=0;$i<count($projects);$i++){
+            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($projects[$i]['id']);
             $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
-            $provence = $this->provenceLogic->findProvence($project['provence']);
+            $provence = $this->provenceLogic->findProvence($projects[$i]['provence']);
 
-            $project['provence_name'] = $provence['name'];
-            $project['assignTypes'] = $assignTypes;
+            $projects[$i]['provence_name'] = $provence['name'];
+            $projects[$i]['assignTypes'] = $assignTypes;
         }
+//        foreach ($projects as $project) {
+//            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project['id']);
+//            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
+//            $provence = $this->provenceLogic->findProvence($project['provence']);
+//
+//            $project['provence_name'] = $provence['name'];
+//            $project['assignTypes'] = $assignTypes;
+//        }
 
-        $param = ['projects' => $projects,'count' => $count,'type' => $typeID,'provence' => $provenceID];
+        $param = ['projects' => $projects,'count' => count($projects),'type' => $typeID,'provence' => $provenceID];
 
         return view('front.online.project',$param);
     }
