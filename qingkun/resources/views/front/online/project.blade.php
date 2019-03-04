@@ -32,12 +32,12 @@
                     </a>
                     <ul class="menu filter-list" id="filter-type-list" data-menu data-menu-toggle="#menu-toggle1">
                         <li class="filter-item">
-                            <a href="/projects/?provience_id={{ !empty($selectProvence)?$selectProvence->id:0 }}">全部</a>
+                            <a href="/projects/?provence_id={{ !empty($selectProvence)?$selectProvence->id:0 }}">全部</a>
                             <input type="hidden" name="type_id" value="0">
                         </li>
                         @foreach ($types as $type)
                             <li class="filter-item">
-                                <a href="/projects/?type_id={{ $type->id }}&provience_id={{ !empty($selectProvence)?$selectProvence->id:0  }}">{{ $type->name }}</a>
+                                <a href="/projects/?type_id={{ $type->id }}&provence_id={{ !empty($selectProvence)?$selectProvence->id:0  }}">{{ $type->name }}</a>
                                 <input type="hidden" name="type_id" value="{{ $type->id }}">
                             </li>
                         @endforeach
@@ -58,12 +58,12 @@
                     </a>
                     <ul class="menu filter-list" id="filter-area-list" data-menu data-menu-toggle="#menu-toggle2">
                         <li class="filter-item">
-                            <a href="/projects/?type_id={{ !empty($selectType)?$selectType->id:0  }}">全部</a>
+                            <a href="/projects/?type_id={{ !empty($selectType)?$selectType->id:0 }}">全部</a>
                             <input type="hidden" name="provence_id" value="0">
                         </li>
                         @foreach ($provences as $provence)
                             <li class="filter-item">
-                                <a href="/projects/?type_id={{ !empty($selectType)?$selectType->id:0  }}&provience_id={{ $provence->id }}">{{ $provence->name }}</a>
+                                <a href="/projects/?type_id={{ !empty($selectType)?$selectType->id:0  }}&provence_id={{ $provence->id }}">{{ $provence->name }}</a>
                                 <input type="hidden" name="provence_id" value="{{ $provence->id }}">
                             </li>
                         @endforeach
