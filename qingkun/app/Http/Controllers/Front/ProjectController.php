@@ -50,7 +50,9 @@ class ProjectController extends Controller
 //            $projects = $this->projectLogic->getAllProjects();
             $projects = DB::table('projects')
                 ->where(['projects.delete_process'=>0])
-                ->get();
+                ->get()->map(function ($value) {
+                    return (array)$value;
+                })->toArray();
 //            $count = DB::table('projects')
 //                ->where(['projects.delete_process'=>0])
 //                ->count();
