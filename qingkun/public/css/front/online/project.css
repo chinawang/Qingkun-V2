@@ -106,9 +106,6 @@
 
 
 .filter-title {
-    font-size: 21px;
-    font-size: 2.1rem;
-    font-weight: 400;
     color: #000000;
     text-decoration: none;
 }
@@ -116,6 +113,12 @@
 .filter-title:hover {
     color: #000000;
     text-decoration: none;
+}
+
+.filter-title >h1 {
+    font-size: 21px;
+    font-size: 2.1rem;
+    font-weight: 400;
 }
 
 .bar-item {
