@@ -101,11 +101,21 @@
         </div>
 
         <div class="row inner-detail">
-            <div class="col-md-3 col-md-offset-1 content-left">
-                <div class="left-title">
+
+            <div class=" col-md-8 col-md-offset-0 content-left">
+                <div class="bio">
+                    <p>
+                        {{--{{ $project['introduction'] }}--}}
+                        {!! $project['introduction'] !!}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-md-offset-0 content-right">
+                <div class="right-title">
                     <h3>项目概况</h3>
                 </div>
-                <div class="left-des">
+                <div class="right-des">
                     @if (!empty($project['type']))
                         <div>
                             <span>建筑类型: </span><span>{{ $project['type'] }}</span>
@@ -141,15 +151,6 @@
                             <span>建成时间: </span><span>{{ $project['build_time'] }}</span>
                         </div>
                     @endif
-                </div>
-            </div>
-
-            <div class=" col-md-7 col-md-offset-0 content-right">
-                <div class="bio">
-                    <p>
-                        {{--{{ $project['introduction'] }}--}}
-                        {!! $project['introduction'] !!}
-                    </p>
                 </div>
             </div>
 
