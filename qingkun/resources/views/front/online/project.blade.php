@@ -16,7 +16,34 @@
 @section('content')
     <div class="main">
         <div class="top-bar">
-            <h1 class="top-title">项目类型</h1>
+            <div class="filter-bar">
+                <div class="dropdown bar-item">
+                    <span>所有项目类型</span>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                    @foreach ($types as $type)
+                    <div class="dropdown-content">
+                        <div class="content-item">
+                            <p >{{ $type->name }}</p>
+                            <input type="hidden" name="type_id" value="{{ $type->id }}">
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+
+                <div class="dropdown bar-item">
+                    <span>所有区域</span>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                    @foreach ($provences as $provence)
+                        <div class="dropdown-content">
+                            <div class="content-item">
+                                <p >{{ $provence->name }}</p>
+                                <input type="hidden" name="provence_id" value="{{ $provence->id }}">
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
             <h1 class="top-text">{{ $count }}个项目</h1>
         </div>
 

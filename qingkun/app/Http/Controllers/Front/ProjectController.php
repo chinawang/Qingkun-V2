@@ -111,8 +111,16 @@ class ProjectController extends Controller
             $project->assignTypes = $assignTypes;
         }
 
+        $provences = DB::table('provences')
+            ->where(['projects.delete_process'=>0])
+            ->get();
 
-        $param = ['projects' => $projects,'count' => count($projects),'type' => $typeID,'provence' => $provenceID];
+        $types = DB::table('types')
+            ->where(['projects.delete_process'=>0])
+            ->get();
+
+
+        $param = ['projects' => $projects,'types' => $types,'provences' => $provences,'count' => count($projects),'type' => $typeID,'provence' => $provenceID];
 
         return view('front.online.project',$param);
     }
