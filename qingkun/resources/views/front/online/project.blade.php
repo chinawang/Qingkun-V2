@@ -20,27 +20,38 @@
                 <div class="dropdown bar-item">
                     <span class="drop-title">所有项目类型</span>
                     <span class="glyphicon glyphicon-chevron-down"></span>
-                    @foreach ($types as $type)
                     <div class="dropdown-content">
-                        <div class="content-item">
-                            <p >{{ $type->name }}</p>
-                            <input type="hidden" name="type_id" value="{{ $type->id }}">
-                        </div>
+                        @foreach ($types as $type)
+                            <div class="content-item">
+                                <p>所有项目类型</p>
+                                <input type="hidden" name="type_id" value="{{ 0 }}">
+                            </div>
+                            <div class="content-item">
+                                <p>{{ $type->name }}</p>
+                                <input type="hidden" name="type_id" value="{{ $type->id }}">
+                            </div>
+                        @endforeach
                     </div>
-                    @endforeach
+
                 </div>
 
                 <div class="dropdown bar-item">
                     <span class="drop-title">所有区域</span>
                     <span class="glyphicon glyphicon-chevron-down"></span>
-                    @foreach ($provences as $provence)
-                        <div class="dropdown-content">
+                    <div class="dropdown-content">
+                        @foreach ($provences as $provence)
                             <div class="content-item">
-                                <p >{{ $provence->name }}</p>
+                                <p>所有区域</p>
+                                <input type="hidden" name="provence_id" value="{{ 0 }}">
+                            </div>
+
+                            <div class="content-item">
+                                <p>{{ $provence->name }}</p>
                                 <input type="hidden" name="provence_id" value="{{ $provence->id }}">
                             </div>
-                        </div>
-                    @endforeach
+
+                        @endforeach
+                    </div>
                 </div>
             </div>
 
@@ -52,11 +63,11 @@
                 @if (!empty($projects[0]))
                     @foreach ($projects as $project)
                         <li class="view-content">
-                                <a href="/project/detail/{{ $project->id }}" class="view-item">
-                                    <img class="view-img" src="{{ $project->photo_large_1 }}?x-oss-process=style/type">
-                                    <span class="view-subtext">{{ $project->provence_name }}</span>
-                                    <span class="view-text">{{ $project->name }}</span>
-                                </a>
+                            <a href="/project/detail/{{ $project->id }}" class="view-item">
+                                <img class="view-img" src="{{ $project->photo_large_1 }}?x-oss-process=style/type">
+                                <span class="view-subtext">{{ $project->provence_name }}</span>
+                                <span class="view-text">{{ $project->name }}</span>
+                            </a>
                             </form>
                         </li>
                     @endforeach
@@ -67,13 +78,13 @@
     </div>
 
     {{--<footer class="footer-container">--}}
-        {{--<div class="col-md-8 col-md-offset-2 foot-text">--}}
-            {{--<a class="foot-link" href="http://www.miitbeian.gov.cn/" target="_blank">--}}
-                {{--浙ICP备18021663号--}}
-            {{--</a>--}}
-            {{--&nbsp--}}
-            {{--<span>©2018 浙江青坤东方建筑设计有限公司</span>--}}
-        {{--</div>--}}
+    {{--<div class="col-md-8 col-md-offset-2 foot-text">--}}
+    {{--<a class="foot-link" href="http://www.miitbeian.gov.cn/" target="_blank">--}}
+    {{--浙ICP备18021663号--}}
+    {{--</a>--}}
+    {{--&nbsp--}}
+    {{--<span>©2018 浙江青坤东方建筑设计有限公司</span>--}}
+    {{--</div>--}}
     {{--</footer>--}}
 
 
@@ -97,13 +108,13 @@
     </script>
 
     {{--<script type="text/javascript">--}}
-        {{--$(document).ready(function() {--}}
-            {{--$("#project-link").click(function() {--}}
-                {{--$("html, body").animate({--}}
-                    {{--scrollTop: $("#project-view").offset().top }, {duration: 500,easing: "swing"});--}}
-                {{--return false;--}}
-            {{--});--}}
-        {{--});--}}
+    {{--$(document).ready(function() {--}}
+    {{--$("#project-link").click(function() {--}}
+    {{--$("html, body").animate({--}}
+    {{--scrollTop: $("#project-view").offset().top }, {duration: 500,easing: "swing"});--}}
+    {{--return false;--}}
+    {{--});--}}
+    {{--});--}}
     {{--</script>--}}
 
 @endsection
