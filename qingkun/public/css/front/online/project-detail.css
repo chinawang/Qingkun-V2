@@ -34,7 +34,7 @@ body {
 
 .view-subtext{
     position: absolute;
-    top: 450px;
+    top: 460px;
     left: 50px;
     font-size: 16px;
     font-size: 1.6rem;
@@ -47,7 +47,7 @@ body {
 
 .view-text{
     position: absolute;
-    top: 470px;
+    top: 500px;
     left: 48px;
     font-size: 26px;
     font-size: 2.6rem;
@@ -59,7 +59,7 @@ body {
 }
 
 .view-tag {
-    top: 420px;
+    top: 500px;
     display: block;
     padding: 0;
     position: absolute;
@@ -72,7 +72,7 @@ body {
 .tag-item {
     background-color: rgba(255,255,255,0.15);
     color: #fff;
-
+    margin-right: 10px;
     cursor: pointer;
     display: inline-block;
     font-family: "Noto Sans TC",Helvetica,Arial;
@@ -82,7 +82,6 @@ body {
     text-align: center;
     font-size: 13px;
     font-size: 1.3rem;
-    background-color: #EBEBEB;
     border: none;
     border-radius: 20px;
     /*color: #000;*/
@@ -95,7 +94,7 @@ body {
     transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 
-.tag-item :hover{
+.tag-item:hover{
     background-color: rgba(255,255,255,0.25);
     color: #fff;
     text-decoration: none;
