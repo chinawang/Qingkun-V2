@@ -18,7 +18,7 @@
         <div class="top-bar">
             <div class="filter-bar">
                 <div class="dropdown bar-item">
-                    <span>所有项目类型</span>
+                    <span class="drop-title">所有项目类型</span>
                     <span class="glyphicon glyphicon-chevron-down"></span>
                     @foreach ($types as $type)
                     <div class="dropdown-content">
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="dropdown bar-item">
-                    <span>所有区域</span>
+                    <span class="drop-title">所有区域</span>
                     <span class="glyphicon glyphicon-chevron-down"></span>
                     @foreach ($provences as $provence)
                         <div class="dropdown-content">
