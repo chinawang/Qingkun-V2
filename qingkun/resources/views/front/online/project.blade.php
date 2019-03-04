@@ -21,11 +21,11 @@
                     <span class="drop-title">所有项目类型</span>
                     <span class="glyphicon glyphicon-chevron-down"></span>
                     <div class="dropdown-content">
+                        <div class="content-item">
+                            <p>所有项目类型</p>
+                            <input type="hidden" name="type_id" value="{{ 0 }}">
+                        </div>
                         @foreach ($types as $type)
-                            <div class="content-item">
-                                <p>所有项目类型</p>
-                                <input type="hidden" name="type_id" value="{{ 0 }}">
-                            </div>
                             <div class="content-item">
                                 <p>{{ $type->name }}</p>
                                 <input type="hidden" name="type_id" value="{{ $type->id }}">
@@ -39,11 +39,12 @@
                     <span class="drop-title">所有区域</span>
                     <span class="glyphicon glyphicon-chevron-down"></span>
                     <div class="dropdown-content">
+
+                        <div class="content-item">
+                            <p>所有区域</p>
+                            <input type="hidden" name="provence_id" value="{{ 0 }}">
+                        </div>
                         @foreach ($provences as $provence)
-                            <div class="content-item">
-                                <p>所有区域</p>
-                                <input type="hidden" name="provence_id" value="{{ 0 }}">
-                            </div>
 
                             <div class="content-item">
                                 <p>{{ $provence->name }}</p>
