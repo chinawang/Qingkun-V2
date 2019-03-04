@@ -70,6 +70,7 @@ class ProjectController extends Controller
         {
             $projects = DB::table('projects')
                 ->join('project_types','projects.id','=','project_types.project_id')
+                ->select('projects.*')
                 ->where(['projects.delete_process'=>0,'project_types.type_id'=>$typeID])
                 ->get();
 //            $count = DB::table('projects')
@@ -81,6 +82,7 @@ class ProjectController extends Controller
         {
             $projects = DB::table('projects')
                 ->join('project_types','projects.id','=','project_types.project_id')
+                ->select('projects.*')
                 ->where(['projects.delete_process'=>0,'projects.provence'=>$provenceID,'project_types.type_id'=>$typeID])
                 ->get();
 //            $count = DB::table('projects')
