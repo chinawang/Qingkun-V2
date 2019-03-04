@@ -55,10 +55,10 @@
                 </div>
 
             </div>
+
+            <h1 class="top-text">{{ $count }}个项目</h1>
         </div>
 
-
-        <h1 class="top-text">{{ $count }}个项目</h1>
     </div>
 
     <div class="view-grid col-md-12 col-md-offset-0">
