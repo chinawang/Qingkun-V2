@@ -25,14 +25,18 @@
                 @if (!empty($types[0]))
                     @foreach ($types as $type)
                 <li class="view-content">
-                    <form class="form-horizontal" role="form" method="POST" action="/projects"
-                           id="typeForm">
-                        <input type="hidden" name="type_id" value="{{ $type['id'] }}">
-                    <a onclick="document:typeForm.submit()" class="view-item">
+                    {{--<form class="form-horizontal" role="form" method="POST" action="/projects"--}}
+                           {{--id="typeForm">--}}
+                        {{--<input type="hidden" name="type_id" value="{{ $type['id'] }}">--}}
+                    {{--<a onclick="document:typeForm.submit()" class="view-item">--}}
+                        {{--<img class="view-img" src="{{ $type['photo'] }}">--}}
+                        {{--<span class="view-text">{{ $type['name'] }}</span>--}}
+                    {{--</a>--}}
+                    {{--</form>--}}
+                    <a href="/projects/?type_id={{ $type['id'] }}" class="view-item">
                         <img class="view-img" src="{{ $type['photo'] }}">
                         <span class="view-text">{{ $type['name'] }}</span>
                     </a>
-                    </form>
                 </li>
                     @endforeach
                 @endif
