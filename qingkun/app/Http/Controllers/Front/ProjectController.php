@@ -119,8 +119,11 @@ class ProjectController extends Controller
             ->where(['types.delete_process'=>0])
             ->get();
 
+        $selectType = $this->typeLogic->findType($typeID);
+        $selectProvence = $this->provenceLogic->findProvence($provenceID);
 
-        $param = ['projects' => $projects,'types' => $types,'provences' => $provences,'count' => count($projects),'type' => $typeID,'provence' => $provenceID];
+
+        $param = ['projects' => $projects,'types' => $types,'provences' => $provences,'count' => count($projects),'selectType' => $selectType,'selectProvence' => $selectProvence];
 
         return view('front.online.project',$param);
     }

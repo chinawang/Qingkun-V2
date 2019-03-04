@@ -21,15 +21,23 @@
                 <div class=" bar-item">
                     <a href="javascript:;" class="toggle filter-title" id="menu-toggle1">
                         <h1 class="material-icons">
-                            项目类型
+                            @if(!empty($selectType))
+                                {{ $selectType->name }}
+                            @else
+                                项目类型
+                            @endif
                             <span class="glyphicon glyphicon-chevron-down" style="font-size: 1.6rem"></span>
                         </h1>
 
                     </a>
                     <ul class="menu filter-list" id="filter-type-list" data-menu data-menu-toggle="#menu-toggle1">
+                        <li class="filter-item">
+                            <a href="/projects/?provience_id={{ !empty($selectProvence)?$selectProvence->id:0 }}">全部</a>
+                            <input type="hidden" name="type_id" value="0">
+                        </li>
                         @foreach ($types as $type)
                             <li class="filter-item">
-                                <a href="#">{{ $type->name }}</a>
+                                <a href="/projects/?type_id={{ $type->id }}&provience_id={{ !empty($selectProvence)?$selectProvence->id:0  }}">{{ $type->name }}</a>
                                 <input type="hidden" name="type_id" value="{{ $type->id }}">
                             </li>
                         @endforeach
@@ -39,15 +47,23 @@
                 <div class=" bar-item">
                     <a href="javascript:;" class="toggle filter-title" id="menu-toggle2">
                         <h1 class="material-icons">
-                            区域
+                            @if(!empty($selectProvence))
+                                {{ $selectProvence->name }}
+                            @else
+                                区域
+                            @endif
                             <span class="glyphicon glyphicon-chevron-down" style="font-size: 1.6rem"></span>
                         </h1>
 
                     </a>
                     <ul class="menu filter-list" id="filter-area-list" data-menu data-menu-toggle="#menu-toggle2">
+                        <li class="filter-item">
+                            <a href="/projects/?type_id={{ !empty($selectType)?$selectType->id:0  }}">全部</a>
+                            <input type="hidden" name="provence_id" value="0">
+                        </li>
                         @foreach ($provences as $provence)
                             <li class="filter-item">
-                                <a href="#">{{ $provence->name }}</a>
+                                <a href="/projects/?type_id={{ !empty($selectType)?$selectType->id:0  }}&provience_id={{ $provence->id }}">{{ $provence->name }}</a>
                                 <input type="hidden" name="provence_id" value="{{ $provence->id }}">
                             </li>
                         @endforeach
