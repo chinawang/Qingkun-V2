@@ -22,7 +22,7 @@
                     <a href="javascript:;" class="toggle filter-title" id="menu-toggle1">
                         <h1 class="material-icons">
                             项目类型
-                            <span class="glyphicon glyphicon-chevron-down"></span>
+                            <span class="glyphicon glyphicon-chevron-down" style="font-size: 1.6rem"></span>
                         </h1>
 
                     </a>
@@ -40,7 +40,7 @@
                     <a href="javascript:;" class="toggle filter-title" id="menu-toggle2">
                         <h1 class="material-icons">
                             区域
-                            <span class="glyphicon glyphicon-chevron-down"></span>
+                            <span class="glyphicon glyphicon-chevron-down" style="font-size: 1.6rem"></span>
                         </h1>
 
                     </a>
