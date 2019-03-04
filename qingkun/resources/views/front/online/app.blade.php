@@ -50,7 +50,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}" style="color:#000000;">
-                    <img src="/img/header/logo_qingkun.png" alt="logo" title="青坤东方">
+                    <img src="/img/header/logo_qingkun_white.png" alt="logo" title="青坤东方">
                     {{--{{ config('app.name', 'Laravel') }}--}}
 
                 </a>
