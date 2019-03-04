@@ -34,7 +34,7 @@ body {
 
 .view-subtext{
     position: absolute;
-    bottom: 70px;
+    top: 380px;
     left: 50px;
     font-size: 16px;
     font-size: 1.6rem;
@@ -47,7 +47,7 @@ body {
 
 .view-text{
     position: absolute;
-    bottom: 30px;
+    top: 420px;
     left: 48px;
     font-size: 26px;
     font-size: 2.6rem;
@@ -59,7 +59,7 @@ body {
 }
 
 .view-tag {
-    bottom: 20px;
+    bottom: 420px;
     display: block;
     padding: 0;
     position: absolute;
@@ -98,6 +98,7 @@ body {
 .tag-item :hover{
     background-color: rgba(255,255,255,0.25);
     color: #fff;
+    text-decoration: none;
 }
 
 
