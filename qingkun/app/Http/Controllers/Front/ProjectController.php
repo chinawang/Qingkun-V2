@@ -50,9 +50,7 @@ class ProjectController extends Controller
 //            $projects = $this->projectLogic->getAllProjects();
             $projects = DB::table('projects')
                 ->where(['projects.delete_process'=>0])
-                ->get()->map(function ($value) {
-                    return (array)$value;
-                })->toArray();
+                ->get();
 //            $count = DB::table('projects')
 //                ->where(['projects.delete_process'=>0])
 //                ->count();
@@ -105,12 +103,12 @@ class ProjectController extends Controller
 
 
         foreach ($projects as $project) {
-            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project['id']);
+            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project->id);
             $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
-            $provence = $this->provenceLogic->findProvence($project['provence']);
+            $provence = $this->provenceLogic->findProvence($project->provence);
 
-            $project['provence_name'] = $provence['name'];
-            $project['assignTypes'] = $assignTypes;
+            $project->provence_name = $provence['name'];
+            $project->assignTypes = $assignTypes;
         }
 
 
