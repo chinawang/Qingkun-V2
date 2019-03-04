@@ -5,6 +5,7 @@
     <link href="{{ asset('css/owl.carousel.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.theme.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.transitions.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/front/online/project.css') }}" rel="stylesheet">
 @endsection
@@ -17,46 +18,36 @@
     <div class="main">
         <div class="top-bar">
             <div class="filter-bar">
-                <div class="dropdown dropdown-selection bar-item">
-                    <div class="dropdown-trigger-container">
-                        <div class="dropdown-trigger" slot="dropdown-trigger">
-                            <div class="text">所有项目类型</div>
-                            <span class="caret"></span>
-                        </div>
-                    </div>
-                    <div class="dropdown-content-container slideY-transition" style="display: none">
-                        <div class="dropdown-content " slot="dropdown-content">
-                            @foreach ($types as $type)
-                                <div class="content-item">
-                                    <p>{{ $type->name }}</p>
-                                    <input type="hidden" name="type_id" value="{{ $type->id }}">
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
+                <div class=" bar-item">
+                    <a href="javascript:;" class="toggle filter-title" id="menu-toggle1">
+                        <h1 class="material-icons">项目类型</h1>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="menu filter-list" data-menu data-menu-toggle="#menu-toggle1">
+                        @foreach ($types as $type)
+                            <li class="filter-item">
+                                <a href="#">{{ $type->name }}</a>
+                                <input type="hidden" name="type_id" value="{{ $type->id }}">
+                            </li>
+                        @endforeach
+                    </ul>
                 </div>
 
-
-                <div class="dropdown dropdown-selection bar-item">
-                    <div class="dropdown-trigger-container">
-                        <div class="dropdown-trigger" slot="dropdown-trigger">
-                            <div class="text">所有区域</div>
-                            <span class="caret"></span>
-                        </div>
-                    </div>
-                    <div class="dropdown-content-container slideY-transition" style="display: none">
-                        <div class="dropdown-content " slot="dropdown-content">
-                            @foreach ($provences as $provence)
-
-                                <div class="content-item">
-                                    <p>{{ $provence->name }}</p>
-                                    <input type="hidden" name="provence_id" value="{{ $provence->id }}">
-                                </div>
-
-                            @endforeach
-                        </div>
-                    </div>
+                <div class=" bar-item">
+                    <a href="javascript:;" class="toggle filter-title" id="menu-toggle2">
+                        <h1 class="material-icons">区域</h1>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="menu filter-list" data-menu data-menu-toggle="#menu-toggle2">
+                        @foreach ($provences as $provence)
+                            <li class="filter-item">
+                                <a href="#">{{ $provence->name }}</a>
+                                <input type="hidden" name="provence_id" value="{{ $provence->id }}">
+                            </li>
+                        @endforeach
+                    </ul>
                 </div>
+
             </div>
         </div>
 
@@ -100,6 +91,7 @@
 
     <!--轮播Banner-->
     <script src="{{ asset('js/owl.carousel.js') }}"></script>
+    <script src="{{ asset('js/menu.js') }}"></script>
     <script>
         $(function () {
             $('#owl-banner').owlCarousel({
@@ -110,6 +102,8 @@
 //                navigation: true,
 //                navigationText: ["上一个","下一个"]
             });
+
+            $('[data-menu]').menu();
         });
     </script>
 
