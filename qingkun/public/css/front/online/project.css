@@ -122,10 +122,17 @@
 }
 
 .filter-list {
-    width: 160px;
+    width: 100%;
     height: 400px;
     margin-top: 50px;
+    margin-left: -20px;
     background: #ffffff;
+}
+
+.filter-item {
+    float: left;
+    width: 10%;
+    margin-right: 20px;
 }
 
 .bar-item {
