@@ -50,7 +50,7 @@ class ProjectController extends Controller
 //            $projects = $this->projectLogic->getAllProjects();
             $projects = DB::table('projects')
                 ->where(['projects.delete_process'=>0])
-                ->get();
+                ->get()->toArray();
 //            $count = DB::table('projects')
 //                ->where(['projects.delete_process'=>0])
 //                ->count();
@@ -61,7 +61,7 @@ class ProjectController extends Controller
 //            $projects = $this->projectLogic->getAllProjectsBy($conditions);
             $projects = DB::table('projects')
                 ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID])
-                ->get();
+                ->get()->toArray();
 //            $count = DB::table('projects')
 //                ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID])
 //                ->count();
@@ -71,7 +71,7 @@ class ProjectController extends Controller
             $projects = DB::table('projects')
                 ->join('project_types','projects.id','=','project_types.project_id')
                 ->where(['projects.delete_process'=>0,'project_types.type_id'=>$typeID])
-                ->get();
+                ->get()->toArray();
 //            $count = DB::table('projects')
 //                ->join('project_types','projects.id','=','project_types.project_id')
 //                ->where(['projects.delete_process'=>0,'project_types.type_id'=>$typeID])
@@ -82,7 +82,7 @@ class ProjectController extends Controller
             $projects = DB::table('projects')
                 ->join('project_types','projects.id','=','project_types.project_id')
                 ->where(['projects.delete_process'=>0,'projects.provence'=>$provenceID,'project_types.type_id'=>$typeID])
-                ->get();
+                ->get()->toArray();
 //            $count = DB::table('projects')
 //                ->join('project_types','projects.id','=','project_types.project_id')
 //                ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID,'project_types.type_id'=>$typeID])
@@ -90,23 +90,23 @@ class ProjectController extends Controller
         }
 
 //        $count = count($projects);
-
-        for($i=0;$i<count($projects);$i++){
-            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($projects[$i]['id']);
-            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
-            $provence = $this->provenceLogic->findProvence($projects[$i]['provence']);
-
-            $projects[$i]['provence_name'] = $provence['name'];
-            $projects[$i]['assignTypes'] = $assignTypes;
-        }
-//        foreach ($projects as $project) {
-//            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project['id']);
-//            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
-//            $provence = $this->provenceLogic->findProvence($project['provence']);
 //
-//            $project['provence_name'] = $provence['name'];
-//            $project['assignTypes'] = $assignTypes;
+//        for($i=0;$i<count($projects);$i++){
+//            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($projects[$i]['id']);
+//            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
+//            $provence = $this->provenceLogic->findProvence($projects[$i]['provence']);
+//
+//            $projects[$i]['provence_name'] = $provence['name'];
+//            $projects[$i]['assignTypes'] = $assignTypes;
 //        }
+        foreach ($projects as $project) {
+            $assignTypeIDs = $this->projectLogic->getTypeIDsByProjectID($project['id']);
+            $assignTypes = $this->typeLogic->getTypesByIDs($assignTypeIDs);
+            $provence = $this->provenceLogic->findProvence($project['provence']);
+
+            $project['provence_name'] = $provence['name'];
+            $project['assignTypes'] = $assignTypes;
+        }
 
         $param = ['projects' => $projects,'count' => count($projects),'type' => $typeID,'provence' => $provenceID];
 
