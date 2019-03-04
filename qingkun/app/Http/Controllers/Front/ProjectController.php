@@ -112,11 +112,11 @@ class ProjectController extends Controller
         }
 
         $provences = DB::table('provences')
-            ->where(['projects.delete_process'=>0])
+            ->where(['provences.delete_process'=>0])
             ->get();
 
         $types = DB::table('types')
-            ->where(['projects.delete_process'=>0])
+            ->where(['types.delete_process'=>0])
             ->get();
 
 
