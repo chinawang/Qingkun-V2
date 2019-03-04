@@ -129,7 +129,7 @@
 }
 
 #filter-type-list {
-    height: 200px;
+    height: 180px;
 }
 
 #filter-area-list {
@@ -146,6 +146,8 @@
 
 .menu li{
     width: 20%;
+    font-size: 1.6rem;
+    color: #000000;
 }
 
 
