@@ -122,11 +122,18 @@
 }
 
 .filter-list {
-    height: 400px;
     width: 800px;
     margin-top: 50px;
     margin-left: -20px;
     background: #ffffff;
+}
+
+#filter-type-list {
+    height: 120px;
+}
+
+#filter-area-list {
+    height: 400px;
 }
 
 .filter-item {
@@ -136,8 +143,12 @@
 }
 
 .menu li{
-    width: 10%;
-    margin-left: 10px;
+    width: 20%;
+}
+
+
+.menu li:first-child{
+    margin-top: 8px;
 }
 
 .bar-item {

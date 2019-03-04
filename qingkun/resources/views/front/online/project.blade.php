@@ -26,7 +26,7 @@
                         </h1>
 
                     </a>
-                    <ul class="menu filter-list" data-menu data-menu-toggle="#menu-toggle1">
+                    <ul class="menu filter-list" id="filter-type-list" data-menu data-menu-toggle="#menu-toggle1">
                         @foreach ($types as $type)
                             <li class="filter-item">
                                 <a href="#">{{ $type->name }}</a>
@@ -44,7 +44,7 @@
                         </h1>
 
                     </a>
-                    <ul class="menu filter-list" data-menu data-menu-toggle="#menu-toggle2">
+                    <ul class="menu filter-list" id="filter-area-list" data-menu data-menu-toggle="#menu-toggle2">
                         @foreach ($provences as $provence)
                             <li class="filter-item">
                                 <a href="#">{{ $provence->name }}</a>
