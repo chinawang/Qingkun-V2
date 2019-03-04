@@ -20,8 +20,11 @@
             <div class="filter-bar">
                 <div class=" bar-item">
                     <a href="javascript:;" class="toggle filter-title" id="menu-toggle1">
-                        <h1 class="material-icons">项目类型</h1>
-                        <span class="glyphicon glyphicon-chevron-down"></span>
+                        <h1 class="material-icons">
+                            项目类型
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </h1>
+
                     </a>
                     <ul class="menu filter-list" data-menu data-menu-toggle="#menu-toggle1">
                         @foreach ($types as $type)
