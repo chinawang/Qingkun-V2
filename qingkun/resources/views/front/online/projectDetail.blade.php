@@ -88,16 +88,16 @@
                     <img src="{{ $project['photo_large_10'] }}" alt="">
                 </a>
             @endif
-            <span class="view-subtext">{{ $project['provence_name'] }} , {{ $project['address'] }}</span>
-            <span class="view-text">{{ $project['name'] }}</span>
-            <div class="view-tag">
-                @foreach($project['assignTypes'] as $assignType)
-                    <a href="/projects/?type_id={{ $assignType['id'] }}" class="tag-item">
-                        {{ $assignType['name'] }}
-                    </a>
-                @endforeach
-            </div>
 
+        </div>
+        <span class="view-subtext">{{ $project['provence_name'] }} , {{ $project['address'] }}</span>
+        <span class="view-text">{{ $project['name'] }}</span>
+        <div class="view-tag">
+            @foreach($project['assignTypes'] as $assignType)
+                <a href="/projects/?type_id={{ $assignType['id'] }}" class="tag-item">
+                    {{ $assignType['name'] }}
+                </a>
+            @endforeach
         </div>
 
         <div class="row inner-detail">
