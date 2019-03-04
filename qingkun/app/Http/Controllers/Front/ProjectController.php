@@ -47,18 +47,24 @@ class ProjectController extends Controller
 
         if($typeID == 0 && $provenceID == 0)
         {
-            $projects = $this->projectLogic->getAllProjects();
-            $count = DB::table('projects')
+//            $projects = $this->projectLogic->getAllProjects();
+            $projects = DB::table('projects')
                 ->where(['projects.delete_process'=>0])
-                ->count();
+                ->get();
+//            $count = DB::table('projects')
+//                ->where(['projects.delete_process'=>0])
+//                ->count();
         }
         elseif ($typeID == 0 && $provenceID != 0)
         {
-            $conditions = ['delete_process' => 0,'provence' => $provenceID];
-            $projects = $this->projectLogic->getAllProjectsBy($conditions);
-            $count = DB::table('projects')
+//            $conditions = ['delete_process' => 0,'provence' => $provenceID];
+//            $projects = $this->projectLogic->getAllProjectsBy($conditions);
+            $projects = DB::table('projects')
                 ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID])
-                ->count();
+                ->get();
+//            $count = DB::table('projects')
+//                ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID])
+//                ->count();
         }
         elseif ($typeID != 0 && $provenceID == 0)
         {
@@ -66,10 +72,10 @@ class ProjectController extends Controller
                 ->join('project_types','projects.id','=','project_types.project_id')
                 ->where(['projects.delete_process'=>0,'project_types.type_id'=>$typeID])
                 ->get();
-            $count = DB::table('projects')
-                ->join('project_types','projects.id','=','project_types.project_id')
-                ->where(['projects.delete_process'=>0,'project_types.type_id'=>$typeID])
-                ->count();
+//            $count = DB::table('projects')
+//                ->join('project_types','projects.id','=','project_types.project_id')
+//                ->where(['projects.delete_process'=>0,'project_types.type_id'=>$typeID])
+//                ->count();
         }
         else
         {
@@ -77,10 +83,10 @@ class ProjectController extends Controller
                 ->join('project_types','projects.id','=','project_types.project_id')
                 ->where(['projects.delete_process'=>0,'projects.provence'=>$provenceID,'project_types.type_id'=>$typeID])
                 ->get();
-            $count = DB::table('projects')
-                ->join('project_types','projects.id','=','project_types.project_id')
-                ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID,'project_types.type_id'=>$typeID])
-                ->count();
+//            $count = DB::table('projects')
+//                ->join('project_types','projects.id','=','project_types.project_id')
+//                ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID,'project_types.type_id'=>$typeID])
+//                ->count();
         }
 
         $count = count($projects);
