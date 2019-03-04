@@ -33,6 +33,11 @@ body {
     margin-top: 0px;
 }
 
+.inner-detail{
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
 .view-subtext{
     position: absolute;
     top: 460px;
