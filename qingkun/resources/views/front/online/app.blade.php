@@ -81,7 +81,7 @@
                         <a class="nav-link" href="{{ url('/expertise/type') }}">专长</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/employees') }}">专家</a>
+                        <a class="nav-link" href="{{ url('/employees') }}">专家团队</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/jobs') }}">工作机会</a>

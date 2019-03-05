@@ -22,89 +22,79 @@
                  alt="">
         </div>
         <div class="top-text">
-            <h3>Expert / 专家团队</h3>
+            <h1>
+                提供规划、建筑、景观、室内等全专业的设计服务，做到各专业的无缝衔接，为项目提供整体设计解决方案，目前，公司各项业务稳步推进，数个项目被绿城集团作为标杆推广。
+            </h1>
         </div>
-        <div class="overlay"></div>
-
-        <div class="row row-card">
-
+        <ul class="view-content">
             @if (!empty($employees[0]))
                 @foreach ($employees as $employee)
-                    <div class="card mb-3">
+                    <li class="view-card">
                         <a class="card-main" href="#" data-toggle="modal"
                            data-target="#detailModal{{ $employee['id'] }}">
-                            <div class="card-top">
-                                @if (!empty($employee['avatar']))
-                                    <img class="card-img"
-                                         src="{{ $employee['avatar'] }}"
-                                         alt="Card image">
-                                @else
-                                    <img class="card-img"
-                                         src="/img/avatar_default.png"
-                                         alt="Card image">
-                                @endif
-
-                            </div>
-
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    {{ $employee['name'] }}
-                                </h5>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">
-                                    {{ $employee['job'] }}
-                                </p>
-                            </div>
+                            @if (!empty($employee['avatar']))
+                                <img class="view-img"
+                                     src="{{ $employee['avatar'] }}"
+                                     alt="Card image">
+                            @else
+                                <img class="view-img"
+                                     src="/img/avatar_default.png"
+                                     alt="Card image">
+                            @endif
+                            <h1 class="view-title">
+                                {{ $employee['name'] }}
+                            </h1>
+                            <span class="view-text">
+                            {{ $employee['job'] }}
+                        </span>
                         </a>
-                    </div>
+                    </li>
                 @endforeach
             @endif
+        </ul>
 
         <!--详情弹框-->
-            @if (!empty($employees[0]))
-                @foreach ($employees as $employee)
-                    <div class="modal fade" id="detailModal{{ $employee['id'] }}" tabindex="-1" role="dialog"
-                         aria-labelledby="myModalLabel"
-                         aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                    &times;
-                                </button>
-                                <div class="row inner-detail">
-                                    <div class=" col-md-4 col-md-offset-0 content-left">
-                                        <div class="headshot">
-                                            @if (!empty($employee['avatar']))
-                                                <img
-                                                        src="{{ $employee['avatar'] }}"
-                                                        alt="{{ $employee['name'] }}" style="display: block;">
-                                            @else
-                                                <img
-                                                        src="/img/avatar_default.png"
-                                                        alt="{{ $employee['name'] }}" style="display: block;">
-                                            @endif
-                                        </div>
-                                        <h3>{{ $employee['job'] }}</h3>
+        @if (!empty($employees[0]))
+            @foreach ($employees as $employee)
+                <div class="modal fade" id="detailModal{{ $employee['id'] }}" tabindex="-1" role="dialog"
+                     aria-labelledby="myModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <div class="row inner-detail">
+                                <div class=" col-md-4 col-md-offset-0 content-left">
+                                    <div class="headshot">
+                                        @if (!empty($employee['avatar']))
+                                            <img
+                                                    src="{{ $employee['avatar'] }}"
+                                                    alt="{{ $employee['name'] }}" style="display: block;">
+                                        @else
+                                            <img
+                                                    src="/img/avatar_default.png"
+                                                    alt="{{ $employee['name'] }}" style="display: block;">
+                                        @endif
                                     </div>
-                                    <div class="col-md-8 col-md-offset-0 content-right">
-                                        <h1>{{ $employee['name'] }}</h1>
-                                        <h3>{{ $employee['abstract'] }}</h3>
-                                        <div class="bio">
-                                            <p>
-                                                {{ $employee['introduction'] }}
-                                            </p>
-                                        </div>
+                                    <h3>{{ $employee['job'] }}</h3>
+                                </div>
+                                <div class="col-md-8 col-md-offset-0 content-right">
+                                    <h1>{{ $employee['name'] }}</h1>
+                                    <h3>{{ $employee['abstract'] }}</h3>
+                                    <div class="bio">
+                                        <p>
+                                            {{ $employee['introduction'] }}
+                                        </p>
+                                    </div>
 
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                @endforeach
-            @endif
-
-        </div>
+                </div>
+            @endforeach
+        @endif
 
     {{--<footer class="footer-container">--}}
     {{--<div class="col-md-8 col-md-offset-2 foot-text">--}}
