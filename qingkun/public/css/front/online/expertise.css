@@ -40,15 +40,19 @@ body {
 }
 
 .top-text {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-left: 0px;
-    padding-bottom: 10px;
-    width: 60%;
+    padding-bottom: 40px;
+    width: 100%;
+    background: #ffffff;
     text-align: center;
 
 }
 
 .top-text > h1 {
+    text-align: left;
+    width: 50%;
+    margin-left: 25%;
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 34px;
@@ -70,15 +74,16 @@ body {
     float: left;
     background-color: #ffffff;
     width: calc(50% - 70px);
-    height: 700px;
+    height: 600px;
     margin-left: 50px;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .view-img {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: inline-block;
     /*margin-bottom: -60px;*/
     transition: all 0.6s;
@@ -90,7 +95,7 @@ body {
 
 .view-title{
     position: absolute;
-    top: 30px;
+    top: 320px;
     left: 48px;
     font-size: 26px;
     font-size: 2.6rem;
@@ -103,7 +108,7 @@ body {
 
 .view-text{
     position: absolute;
-    top: 60px;
+    top: 400px;
     left: 48px;
     font-size: 16px;
     font-size: 1.6rem;
