@@ -44,7 +44,7 @@
 </head>
 <body>
 <div id="app">
-    <header class="cd-auto-hide-header">
+    {{--<header class="cd-auto-hide-header">--}}
     <nav class="navbar navbar-expand-lg navbar-fixed-top cd-primary-nav" >
         <div class="container">
             <div class="navbar-header">
@@ -100,7 +100,7 @@
             </div>
         </div>
     </nav><!-- .cd-primary-nav -->
-    </header> <!-- .cd-auto-hide-header -->
+    {{--</header> <!-- .cd-auto-hide-header -->--}}
     @yield('location')
     @yield('content')
 
@@ -131,15 +131,15 @@
         }
     });
 
-    var scrolling = false;
-    $(window).on('scroll', function(){
-        if( !scrolling ) {
-            scrolling = true;
-            (!window.requestAnimationFrame)
-                    ? setTimeout(autoHideHeader, 250)
-                    : requestAnimationFrame(autoHideHeader);
-        }
-    });
+//    var scrolling = false;
+//    $(window).on('scroll', function(){
+//        if( !scrolling ) {
+//            scrolling = true;
+//            (!window.requestAnimationFrame)
+//                    ? setTimeout(autoHideHeader, 250)
+//                    : requestAnimationFrame(autoHideHeader);
+//        }
+//    });
 </script>
 
 @yield('javascript')
