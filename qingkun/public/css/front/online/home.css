@@ -188,6 +188,10 @@ html{
     /*height: 100%;*/
 /*}*/
 
+.slide__bg {
+    left: 0;
+}
+
 .slide__text {
     width: 50%;
     left: 25%;
