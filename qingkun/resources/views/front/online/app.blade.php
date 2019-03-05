@@ -44,7 +44,8 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-fixed-top" >
+    <header class="cd-auto-hide-header">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top cd-primary-nav" >
         <div class="container">
             <div class="navbar-header">
 
@@ -98,7 +99,8 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav><!-- .cd-primary-nav -->
+    </header> <!-- .cd-auto-hide-header -->
     @yield('location')
     @yield('content')
 
@@ -116,6 +118,7 @@
 <script src="{{ asset('js/sweetalert.min.js') }}"></script>
 
 <script src="{{ asset('js/pace.min.js') }}"></script>
+<script src="{{ asset('js/auto-hiding-navigation.js') }}"></script>
 
 <script>
     $("[data-toggle='tooltip']").tooltip();
@@ -125,6 +128,16 @@
     $('.navbar-nav').find('a').each(function () {
         if (this.href == document.location.href) {
             $(this).parent().addClass('nav-active');
+        }
+    });
+
+    var scrolling = false;
+    $(window).on('scroll', function(){
+        if( !scrolling ) {
+            scrolling = true;
+            (!window.requestAnimationFrame)
+                    ? setTimeout(autoHideHeader, 250)
+                    : requestAnimationFrame(autoHideHeader);
         }
     });
 </script>
