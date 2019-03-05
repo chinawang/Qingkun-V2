@@ -47,7 +47,7 @@
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>类型</th>
+                                    {{--<th>类型</th>--}}
                                     <th>名称</th>
                                     <th>封面图片</th>
                                     <th>正文</th>
@@ -61,17 +61,17 @@
                                 @foreach ($expertises as $expertise)
                                     <tr>
                                         <td>{{ $expertise['id'] }}</td>
-                                        <td>
-                                            @if($expertise['type'] == 1)
-                                                结构工程
-                                            @elseif($expertise['type'] == 2)
-                                                环境工程
-                                            @elseif($expertise['type'] == 3)
-                                                建筑设计
-                                            @elseif($expertise['type'] == 4)
-                                                室内设计
-                                            @endif
-                                        </td>
+                                        {{--<td>--}}
+                                            {{--@if($expertise['type'] == 1)--}}
+                                                {{--结构工程--}}
+                                            {{--@elseif($expertise['type'] == 2)--}}
+                                                {{--环境工程--}}
+                                            {{--@elseif($expertise['type'] == 3)--}}
+                                                {{--建筑设计--}}
+                                            {{--@elseif($expertise['type'] == 4)--}}
+                                                {{--室内设计--}}
+                                            {{--@endif--}}
+                                        {{--</td>--}}
                                         <td>{{ $expertise['name'] }}</td>
                                         <td>{{ $expertise['photo'] }}</td>
                                         <td>

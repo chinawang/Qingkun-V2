@@ -37,23 +37,23 @@
                               action="/expertise/update/{{ $expertise['id'] }}">
                             {{ csrf_field() }}
 
-                            <div class="form-group{{ $errors->has('	type') ? ' has-error' : '' }}">
-                                <label for="type" class="col-md-4 control-label">类型</label>
+                            {{--<div class="form-group{{ $errors->has('	type') ? ' has-error' : '' }}">--}}
+                                {{--<label for="type" class="col-md-4 control-label">类型</label>--}}
 
-                                <div class="col-md-6">
-                                    <select class="form-control" id="select" name="type">
-                                        <option value="1" {{$expertise['type'] == 1 ? 'selected="selected"' : ''}}>结构工程</option>
-                                        <option value="2" {{$expertise['type'] == 2 ? 'selected="selected"' : ''}}>环境工程</option>
-                                        <option value="3" {{$expertise['type'] == 3 ? 'selected="selected"' : ''}}>建筑设计</option>
-                                        <option value="4" {{$expertise['type'] == 4 ? 'selected="selected"' : ''}}>室内设计</option>
-                                    </select>
-                                    @if ($errors->has('	repair_process'))
-                                        <span class="help-block">
-                                        <strong>{{ $errors->first('	repair_process') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
+                                {{--<div class="col-md-6">--}}
+                                    {{--<select class="form-control" id="select" name="type">--}}
+                                        {{--<option value="1" {{$expertise['type'] == 1 ? 'selected="selected"' : ''}}>结构工程</option>--}}
+                                        {{--<option value="2" {{$expertise['type'] == 2 ? 'selected="selected"' : ''}}>环境工程</option>--}}
+                                        {{--<option value="3" {{$expertise['type'] == 3 ? 'selected="selected"' : ''}}>建筑设计</option>--}}
+                                        {{--<option value="4" {{$expertise['type'] == 4 ? 'selected="selected"' : ''}}>室内设计</option>--}}
+                                    {{--</select>--}}
+                                    {{--@if ($errors->has('	repair_process'))--}}
+                                        {{--<span class="help-block">--}}
+                                        {{--<strong>{{ $errors->first('	repair_process') }}</strong>--}}
+                                    {{--</span>--}}
+                                    {{--@endif--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
 
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                 <label for="name" class="col-md-4 control-label">名称</label>
@@ -85,11 +85,11 @@
                             </div>
 
                             <div class="form-group{{ $errors->has('introduction') ? ' has-error' : '' }}">
-                                <label for="introduction" class="col-md-1 control-label">正文</label>
+                                <label for="introduction" class="col-md-4 control-label">正文描述</label>
 
-                                <div class="col-md-11">
-                                    <textarea id="simditor" type="text" class="form-control" name="introduction"
-                                              placeholder="请输入正文" >{{ $expertise['introduction'] }}
+                                <div class="col-md-6">
+                                    <textarea id="introduction" type="text" class="form-control" name="introduction"
+                                              placeholder="请输入详细介绍" >{{ $expertise['introduction'] }}
                                         </textarea>
 
                                     @if ($errors->has('introduction'))
@@ -99,6 +99,22 @@
                                     @endif
                                 </div>
                             </div>
+
+                            {{--<div class="form-group{{ $errors->has('introduction') ? ' has-error' : '' }}">--}}
+                                {{--<label for="introduction" class="col-md-1 control-label">正文</label>--}}
+
+                                {{--<div class="col-md-11">--}}
+                                    {{--<textarea id="simditor" type="text" class="form-control" name="introduction"--}}
+                                              {{--placeholder="请输入正文" >{{ $expertise['introduction'] }}--}}
+                                        {{--</textarea>--}}
+
+                                    {{--@if ($errors->has('introduction'))--}}
+                                        {{--<span class="help-block">--}}
+                                        {{--<strong>{{ $errors->first('introduction') }}</strong>--}}
+                                    {{--</span>--}}
+                                    {{--@endif--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
 
 
 
