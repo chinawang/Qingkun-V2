@@ -23,9 +23,9 @@
         </div>
         <div class="top-text">
             <h3>工作机会</h3>
-            <p>
+            <span>
                 开放办公环境 &nbsp;&nbsp; 轻松工作氛围 &nbsp;&nbsp; 清晰职业规划
-            </p>
+            </span>
         </div>
         <div class="overlay"></div>
 
