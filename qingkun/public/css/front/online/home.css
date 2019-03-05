@@ -187,3 +187,23 @@ html{
     /*width: 100%;*/
     /*height: 100%;*/
 /*}*/
+
+.slide__text {
+    width: 100%;
+    text-align: center;
+
+}
+.slide__text-heading{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 50px;
+    /*left: 48px;*/
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 38px;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
