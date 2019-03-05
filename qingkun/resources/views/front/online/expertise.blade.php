@@ -40,6 +40,10 @@
                     </li>
                 @endforeach
             @endif
+
+            <div class="view-bottom">
+                <a href="/projects" class="view-btn">浏览所有项目</a>
+            </div>
         </ul>
 
     </div>

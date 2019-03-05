@@ -123,3 +123,38 @@ body {
     letter-spacing: 0.5px;
     color: #000000;
 }
+
+.view-bottom {
+    width: 20%;
+    margin-left: 40%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-btn {
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    margin-left: auto;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Noto Sans TC",Helvetica,Arial;
+    min-width: 80px;
+    min-height: 32px;
+    height: auto;
+    text-align: center;
+    font-size: 13px;
+    font-size: 1.3rem;
+    background-color: #0f0f0f;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 19px;
+    padding: 7px 18px;
+    text-decoration: none;
+}
+.view-btn:hover{
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
