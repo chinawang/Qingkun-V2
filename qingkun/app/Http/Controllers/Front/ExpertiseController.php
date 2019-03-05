@@ -45,4 +45,15 @@ class ExpertiseController extends Controller
         return view('front.online.expertise',$param);
     }
 
+    public function expertiseData()
+    {
+        $conditions = ['delete_process' => 0];
+
+        $expertises = $this->expertiseLogic->getAllExpertisesBy($conditions);
+
+        $param = ['expertises' => $expertises];
+
+        return view('front.online.expertise',$param);
+    }
+
 }
