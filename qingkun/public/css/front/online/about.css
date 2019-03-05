@@ -136,7 +136,7 @@ body{
     color: #000000;
 }
 
-.about-content > p {
+.about-content > span {
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 34px;
