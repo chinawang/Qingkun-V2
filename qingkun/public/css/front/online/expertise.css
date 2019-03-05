@@ -40,9 +40,9 @@ body {
 }
 
 .top-text {
-    padding-top: 40px;
+    padding-top: 50px;
     padding-left: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     width: 100%;
     background: #ffffff;
     text-align: center;
@@ -51,8 +51,8 @@ body {
 
 .top-text > h1 {
     text-align: left;
-    width: 50%;
-    margin-left: 25%;
+    width: 40%;
+    margin-left: 30%;
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 34px;
@@ -65,8 +65,11 @@ body {
 
 .view-content {
     padding: 0;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 30px;
     background-color: #F5F5F5;
+
 }
 
 .view-card {
@@ -77,6 +80,7 @@ body {
     height: 600px;
     margin-left: 50px;
     margin-right: 20px;
+    margin-bottom: 30px;
     overflow: hidden;
 }
 
@@ -110,6 +114,7 @@ body {
     position: absolute;
     top: 400px;
     left: 48px;
+    margin-right: 48px;
     font-size: 16px;
     font-size: 1.6rem;
     line-height: 34px;
