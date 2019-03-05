@@ -36,7 +36,7 @@
                                 </div>
                             </a>
                         @else
-                            <a class="slide slide-0">
+                            <a class="slide slide-{{ $banner['index'] }}">
                                 @if (!empty($banner['photo']))
                                     <img class="slide__bg" src="{{ $banner['photo'] }}" alt="">
                                 @else
