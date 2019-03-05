@@ -199,7 +199,7 @@ html{
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    bottom: 10px;
+    /*bottom: 10px;*/
     /*left: 48px;*/
     font-size: 26px;
     font-size: 2.6rem;
