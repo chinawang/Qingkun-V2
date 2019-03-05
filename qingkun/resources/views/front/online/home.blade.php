@@ -34,7 +34,6 @@
                                     <h3 class="slide__text-heading">{{ $banner['name'] }}</h3>
                                 </div>
                             </a>
-                        @endif
                     @endforeach
                 @endif
             </div>
