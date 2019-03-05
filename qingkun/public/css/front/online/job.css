@@ -47,36 +47,41 @@ body{
     transform: translateY(-50%);
     width: 100%;
     z-index: 3;
+    text-align: center;
 }
 
 .top-text > h3{
     /*font-family: "Benton Sans Light", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;*/
-    font-style: normal;
-    font-stretch: normal;
-    font-size: 46px;
-    max-width: 750px;
-    line-height: 55px;
-    letter-spacing: 4px;
+    font-size: 28px;
+    font-size: 2.8rem;
+    line-height: 38px;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.5px;
     text-align: center;
-    margin: 0px auto 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 .top-text > p{
     /*font-family: "Benton Sans", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;*/
-    font-family: inherit;
-    font-style: normal;
-    font-stretch: normal;
-    font-size: 16px;
-    font-weight: 400;
-    max-width: 750px;
-    line-height: 26px;
-    letter-spacing: 4px;
-    margin: 0px auto;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 38px;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .overlay {
     height: 560px;
-    margin-top: 80px;
+    /*margin-top: 80px;*/
     position: absolute;
     top: 0;
     left: 0;
