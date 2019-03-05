@@ -26,6 +26,7 @@
                 提供规划、建筑、景观、室内等全专业的设计服务，做到各专业的无缝衔接，为项目提供整体设计解决方案，目前，公司各项业务稳步推进，数个项目被绿城集团作为标杆推广。
             </h1>
         </div>
+        <div class="overlay"></div>
         <ul class="view-content">
             @if (!empty($expertises[0]))
                 @foreach ($expertises as $expertise)

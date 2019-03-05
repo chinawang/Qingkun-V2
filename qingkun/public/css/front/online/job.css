@@ -43,7 +43,7 @@ body{
 .top-text {
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 260px;
     transform: translateY(-50%);
     width: 100%;
     z-index: 3;
@@ -52,12 +52,12 @@ body{
 
 .top-text > h3{
     /*font-family: "Benton Sans Light", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;*/
-    font-size: 28px;
-    font-size: 2.8rem;
+    font-size: 36px;
+    font-size: 3.6rem;
     line-height: 38px;
     display: block;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 5px;
     text-align: center;
     width: 100%;
     margin-left: auto;
@@ -67,12 +67,12 @@ body{
 
 .top-text > p{
     /*font-family: "Benton Sans", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;*/
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 26px;
+    font-size: 2.6rem;
     line-height: 38px;
     display: block;
     font-weight: 300;
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
