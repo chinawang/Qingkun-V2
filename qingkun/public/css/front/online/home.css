@@ -190,6 +190,8 @@ html{
 
 .slide__text {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 
 }
@@ -198,7 +200,7 @@ html{
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    bottom: 50px;
+    /*bottom: 50px;*/
     /*left: 48px;*/
     font-size: 26px;
     font-size: 2.6rem;
