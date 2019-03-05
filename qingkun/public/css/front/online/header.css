@@ -64,11 +64,11 @@
 }
 
 .cd-auto-hide-header {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    /*height: 80px;*/
     transition: transform .5s;
 }
 .cd-auto-hide-header.is-hidden {
