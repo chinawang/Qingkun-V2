@@ -191,7 +191,7 @@ html{
 .slide__text {
     width: 50%;
     left: 25%;
-    /*text-align: center;*/
+    text-align: center;
 
 }
 .slide__text-heading{
