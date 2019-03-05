@@ -59,104 +59,133 @@ html{
     margin-top: 0px;
 }
 
-.row-card {
-    width: 1280px;
-    /*height: 640px;*/
-    margin: auto;
-    /*position: absolute;*/
+.slider-container {
+    position: relative;
+    height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: all-scroll;
+}
+
+.slider-control {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 12%;
+    height: 100%;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    will-change: opacity;
+    opacity: 0;
+}
+.slider-control.inactive:hover {
+    cursor: auto;
+}
+.slider-control:not(.inactive):hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.slider-control.left {
     left: 0;
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.slider-control.right {
     right: 0;
-
-    padding-top: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-
-
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
 }
 
-#row-first {
-    margin-bottom: 20px;
+.slider-pagi {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 2rem;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 0;
+    list-style-type: none;
+}
+.slider-pagi__elem {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.slider-pagi__elem:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+}
+.slider-pagi__elem.active:before, .slider-pagi__elem:hover:before {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
 }
 
-#row-second {
-    margin-bottom: 60px;
+.slider {
+    z-index: 1;
+    position: relative;
+    height: 100%;
+}
+.slider.animating {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    will-change: transform;
+}
+.slider.animating .slide__bg {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    will-change: transform;
 }
 
-.title-card {
-    padding-bottom: 10px;
-    padding-left: 10px;
-    text-align: left;
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: #0d1318;
-    font-family: 'Heiti SC';
-}
-
-.card {
-    width: 380px;
-    margin: 10px;
-    height: 320px;
-    float: left;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    border-radius: 0.15rem;
-
-}
-
-.card-top {
-    margin-bottom: 20px;
-    overflow: hidden;
-}
-
-.card:hover {
-    box-shadow: 0 0px 36px rgba(0,0,0,.1);
-    -webkit-transition: all .15s ease;
-    transition: all .15s ease;
-}
-
-.card-main {
-    text-decoration:none;
-}
-
-.card-main:hover {
-    text-decoration:none;
-}
-
-.card-link {
-    float: right;
-    padding:10px;
-}
-
-.card-img {
-    height: 240px;
+.slide {
+    position: absolute;
+    top: 0;
     width: 100%;
-    display: block;
-    transition: all 0.6s;
-}
-
-.card-img:hover {
-    transform: scale(1.2);
-}
-
-.card-body {
-    padding-bottom: 0;
-    padding-top: 0;
-}
-
-.card-title {
-    font-size: 16px;
-    color: #0d1318;
-    font-family: 'Heiti SC';
-}
-
-.card-text {
-
-    font-size: 14px;
-    color: #222222;
-    font-family: 'Heiti SC';
-    letter-spacing: 2px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    height: 100%;
     overflow: hidden;
+}
+.slide.active .slide__overlay,
+.slide.active .slide__text {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+.slide__bg {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    will-change: transform;
+}
+.slide__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

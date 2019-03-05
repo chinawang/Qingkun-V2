@@ -14,37 +14,73 @@
 
 @section('content')
     <div class="main">
+        <div class="slider-container">
+            <div class="slider-control left inactive"></div>
+            <div class="slider-control right"></div>
+            <ul class="slider-pagi">
+            </ul>
+            <div class="slider">
+                @if (!empty($banners[0]))
+                    @foreach ($banners as $banner)
+                        @if (!empty($banner['project_id']))
+                            <a class="slide" href="project/detail/{{ $banner['project_id'] }}">
+                                @if (!empty($banner['photo']))
+                                    <img class="slide__bg" src="{{ $banner['photo'] }}" alt="">
+                                @else
+                                    <img class="slide__bg" src="/img/banner_default.png" alt="">
+                                @endif
 
-        <div id="owl-banner" class="owl-carousel">
-            @if (!empty($banners[0]))
-                @foreach ($banners as $banner)
-                    @if (!empty($banner['project_id']))
-                        <a class="item" href="project/detail/{{ $banner['project_id'] }}">
-                            @if (!empty($banner['photo']))
-                                <img src="{{ $banner['photo'] }}" alt="">
-                            @else
-                                <img src="/img/banner_default.png" alt="">
-                            @endif
-
-                            <div class="carousel-caption"
-                                 style="margin-bottom: -10px;letter-spacing:5px">{{ $banner['name'] }}</div>
-                        </a>
-                    @else
-                        <a class="item">
-                            @if (!empty($banner['photo']))
-                                <img src="{{ $banner['photo'] }}" alt="">
-                            @else
-                                <img src="/img/banner_default.png" alt="">
-                            @endif
-                            <div class="carousel-caption"
-                                 style="margin-bottom: -10px;letter-spacing:5px">{{ $banner['name'] }}</div>
-                        </a>
-                    @endif
-                @endforeach
-            @endif
+                                <div class="slide__text">
+                                    <h3 class="slide__text-heading">{{ $banner['name'] }}</h3>
+                                </div>
+                            </a>
+                        @else
+                            <a class="slide">
+                                @if (!empty($banner['photo']))
+                                    <img class="slide__bg" src="{{ $banner['photo'] }}" alt="">
+                                @else
+                                    <img class="slide__bg" src="/img/banner_default.png" alt="">
+                                @endif
+                                <div class="slide__text">
+                                    <h3 class="slide__text-heading">{{ $banner['name'] }}</h3>
+                                </div>
+                            </a>
+                        @endif
+                    @endforeach
+                @endif
+            </div>
         </div>
+        {{----}}
+        {{--<div id="owl-banner" class="owl-carousel">--}}
+            {{--@if (!empty($banners[0]))--}}
+                {{--@foreach ($banners as $banner)--}}
+                    {{--@if (!empty($banner['project_id']))--}}
+                        {{--<a class="item" href="project/detail/{{ $banner['project_id'] }}">--}}
+                            {{--@if (!empty($banner['photo']))--}}
+                                {{--<img src="{{ $banner['photo'] }}" alt="">--}}
+                            {{--@else--}}
+                                {{--<img src="/img/banner_default.png" alt="">--}}
+                            {{--@endif--}}
 
-    </div>
+                            {{--<div class="carousel-caption"--}}
+                                 {{--style="margin-bottom: -10px;letter-spacing:5px">{{ $banner['name'] }}</div>--}}
+                        {{--</a>--}}
+                    {{--@else--}}
+                        {{--<a class="item">--}}
+                            {{--@if (!empty($banner['photo']))--}}
+                                {{--<img src="{{ $banner['photo'] }}" alt="">--}}
+                            {{--@else--}}
+                                {{--<img src="/img/banner_default.png" alt="">--}}
+                            {{--@endif--}}
+                            {{--<div class="carousel-caption"--}}
+                                 {{--style="margin-bottom: -10px;letter-spacing:5px">{{ $banner['name'] }}</div>--}}
+                        {{--</a>--}}
+                    {{--@endif--}}
+                {{--@endforeach--}}
+            {{--@endif--}}
+        {{--</div>--}}
+
+    {{--</div>--}}
 
     <footer class="footer-container">
         <div class="col-md-8 col-md-offset-2 foot-text">
@@ -63,6 +99,7 @@
 
     <!--轮播Banner-->
     <script src="{{ asset('js/owl.carousel.js') }}"></script>
+    <script src="{{ asset('js/slide.js') }}"></script>
     <script>
         $(function () {
             $('#owl-banner').owlCarousel({
