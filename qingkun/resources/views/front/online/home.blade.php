@@ -30,7 +30,7 @@
                                     <img class="slide__bg" src="/img/banner_default.png" alt="">
                                 @endif
 
-                                <div class="slide__text">
+                                <div class="slide__text text__{{ $banner['index'] }}">
                                     <h3 class="slide__text-heading">{{ $banner['name'] }}</h3>
                                 </div>
                             </a>

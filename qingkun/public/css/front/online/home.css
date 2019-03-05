@@ -200,6 +200,11 @@ html{
     text-align: center;
 
 }
+
+.text__0 {
+    opacity: 1;
+}
+
 .slide__text-heading{
     width: 100%;
     margin-left: auto;

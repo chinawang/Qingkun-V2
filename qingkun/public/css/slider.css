@@ -339,7 +339,8 @@ svg {
   will-change: transform, opacity;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  opacity: 1;
+  /*opacity: 1;*/
+  opacity: 0;
 }
 @media (max-width: 991px) {
   .slide__text {
