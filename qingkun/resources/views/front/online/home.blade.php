@@ -36,16 +36,16 @@
                                 </div>
                             </a>
                         @else
-                            <a class="slide slide-{{ $banner['index'] }}">
-                                @if (!empty($banner['photo']))
-                                    <img class="slide__bg" src="{{ $banner['photo'] }}" alt="">
-                                @else
-                                    <img class="slide__bg" src="/img/banner_default.png" alt="">
-                                @endif
-                                <div class="slide__text">
-                                    <h3 class="slide__text-heading">{{ $banner['name'] }}</h3>
-                                </div>
-                            </a>
+                            {{--<a class="slide slide-{{ $banner['index'] }}">--}}
+                                {{--@if (!empty($banner['photo']))--}}
+                                    {{--<img class="slide__bg" src="{{ $banner['photo'] }}" alt="">--}}
+                                {{--@else--}}
+                                    {{--<img class="slide__bg" src="/img/banner_default.png" alt="">--}}
+                                {{--@endif--}}
+                                {{--<div class="slide__text">--}}
+                                    {{--<h3 class="slide__text-heading">{{ $banner['name'] }}</h3>--}}
+                                {{--</div>--}}
+                            {{--</a>--}}
                         @endif
                     @endforeach
                 @endif
