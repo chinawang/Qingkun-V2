@@ -84,7 +84,7 @@
                         <a class="nav-link" href="{{ url('/employees') }}">专家团队</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/jobs') }}">工作机会</a>
+                        <a class="nav-link" href="{{ url('/jobs') }}">职位招聘</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/about') }}">关于我们</a>

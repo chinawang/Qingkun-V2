@@ -22,11 +22,10 @@
                  alt="">
         </div>
         <div class="top-text">
-            <h3>Work at Qingkun.</h3>
-            <p>Qingkun offers a rewarding career experience, a collaborative interdisciplinary environment, and the
-                opportunity
-                to work on some of the world’s most exciting and progressive projects in architecture, engineering,
-                urban planning, interior design, and environmental graphics.</p>
+            <h3>工作机会</h3>
+            <p>
+                开放办公环境,轻松工作氛围,清晰职业规划
+            </p>
         </div>
         <div class="overlay"></div>
 
