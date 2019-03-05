@@ -271,8 +271,13 @@ body{
 }
 
 .content-subtitle {
-    font-size: 18px;
-    color: #bfbfbf;
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 34px;
+    display: block;
+    font-weight: 300;
+    /*font-size: 18px;*/
+    color: #000000;
     letter-spacing: 6px;
     margin-left: 40px;
     margin-top: -20px;

@@ -37,7 +37,7 @@
                             <h1 class="item-title">{{ $job['job'] }}</h1>
                             <div class="item-subtitle">
                                 <span class="item-depart">{{ $job['department'] }}</span>
-                                <span class="item-address">浙江,杭州</span>
+                                <span class="item-address">浙江 , 杭州</span>
                                 <span class="item-link">查看详情</span>
                             </div>
                         </a>
@@ -62,7 +62,7 @@
                                     <h1 class="content-title">{{ $job['job'] }}</h1>
                                     <div class="content-subtitle">
                                         <span class="content-depart">{{ $job['department'] }}</span>
-                                        <span class="content-address">浙江,杭州</span>
+                                        <span class="content-address">浙江 , 杭州</span>
                                     </div>
                                     <div class="content-first">
                                         <div class="first-title">
