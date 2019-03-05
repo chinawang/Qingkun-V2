@@ -51,6 +51,11 @@ class HomeController extends Controller
         $posts = $this->newsLogic->getAllPosts();
         $awards = $this->awardLogic->getAllAwards();
 
+        for($i=0;$i<count($banners);$i++)
+        {
+            $banners[$i]['index'] = $i;
+        }
+
         $param = ['banners' => $banners,'posts' => $posts,'awards' => $awards];
 
         return view('front.online.home',$param);
