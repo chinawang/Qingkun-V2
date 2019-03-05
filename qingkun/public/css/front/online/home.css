@@ -191,6 +191,7 @@ html{
 .slide__text {
     width: 50%;
     left: 25%;
+    margin-bottom: 40px;
     text-align: center;
 
 }
