@@ -189,10 +189,9 @@ html{
 /*}*/
 
 .slide__text {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    width: 50%;
+    left: 25%;
+    /*text-align: center;*/
 
 }
 .slide__text-heading{
@@ -200,7 +199,7 @@ html{
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    /*bottom: 50px;*/
+    bottom: 30px;
     /*left: 48px;*/
     font-size: 26px;
     font-size: 2.6rem;
