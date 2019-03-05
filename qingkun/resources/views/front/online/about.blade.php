@@ -152,15 +152,15 @@
         </div>
     </div>
 
-    <footer class="footer-container">
-        <div class="col-md-8 col-md-offset-2 foot-text">
-            <a class="foot-link" href="http://www.miitbeian.gov.cn/" target="_blank">
-                浙ICP备18021663号
-            </a>
-            &nbsp
-            <span>©2018 浙江青坤东方建筑设计有限公司</span>
-        </div>
-    </footer>
+    {{--<footer class="footer-container">--}}
+        {{--<div class="col-md-8 col-md-offset-2 foot-text">--}}
+            {{--<a class="foot-link" href="http://www.miitbeian.gov.cn/" target="_blank">--}}
+                {{--浙ICP备18021663号--}}
+            {{--</a>--}}
+            {{--&nbsp--}}
+            {{--<span>©2018 浙江青坤东方建筑设计有限公司</span>--}}
+        {{--</div>--}}
+    {{--</footer>--}}
 
 @endsection
 
