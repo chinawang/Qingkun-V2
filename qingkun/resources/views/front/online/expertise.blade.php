@@ -22,7 +22,9 @@
                  alt="">
         </div>
         <div class="top-text">
-            <h1>我们的专长</h1>
+            <h1>
+                提供规划、建筑、景观、室内等全专业的设计服务，做到各专业的无缝衔接，为项目提供整体设计解决方案，目前，公司各项业务稳步推进，数个项目被绿城集团作为标杆推广。
+            </h1>
         </div>
         <ul class="view-content">
             @if (!empty($expertises[0]))
@@ -41,16 +43,6 @@
         </ul>
 
     </div>
-
-    <footer class="footer-container">
-        <div class="col-md-8 col-md-offset-2 foot-text">
-            <a class="foot-link" href="http://www.miitbeian.gov.cn/" target="_blank">
-                浙ICP备18021663号
-            </a>
-            &nbsp
-            <span>©2018 浙江青坤东方建筑设计有限公司</span>
-        </div>
-    </footer>
 @endsection
 
 @section('javascript')
