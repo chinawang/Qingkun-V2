@@ -202,6 +202,98 @@ svg {
     background-color: rgba(203, 198, 195, 0.8);
   }
 }
+.slide:nth-child(5) {
+  left: 300%;
+}
+.slide:nth-child(5) .slide__bg {
+  left: -150%;
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");*/
+}
+.slide:nth-child(5) .slide__overlay-path {
+  fill: #cbc6c3;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(5) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+
+.slide:nth-child(6) {
+  left: 300%;
+}
+.slide:nth-child(6) .slide__bg {
+  left: -150%;
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");*/
+}
+.slide:nth-child(6) .slide__overlay-path {
+  fill: #cbc6c3;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(6) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+.slide:nth-child(7) {
+  left: 300%;
+}
+.slide:nth-child(7) .slide__bg {
+  left: -150%;
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");*/
+}
+.slide:nth-child(7) .slide__overlay-path {
+  fill: #cbc6c3;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(7) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+.slide:nth-child(8) {
+  left: 300%;
+}
+.slide:nth-child(8) .slide__bg {
+  left: -150%;
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");*/
+}
+.slide:nth-child(8) .slide__overlay-path {
+  fill: #cbc6c3;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(8) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+.slide:nth-child(9) {
+  left: 300%;
+}
+.slide:nth-child(9) .slide__bg {
+  left: -150%;
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");*/
+}
+.slide:nth-child(9) .slide__overlay-path {
+  fill: #cbc6c3;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(9) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+.slide:nth-child(10) {
+  left: 300%;
+}
+.slide:nth-child(10) .slide__bg {
+  left: -150%;
+  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");*/
+}
+.slide:nth-child(10) .slide__overlay-path {
+  fill: #cbc6c3;
+}
+@media (max-width: 991px) {
+  .slide:nth-child(10) .slide__text {
+    background-color: rgba(203, 198, 195, 0.8);
+  }
+}
+
 .slide__content {
   position: absolute;
   top: 0;
