@@ -65,24 +65,6 @@ body{
     margin-bottom: 20px;
 }
 
-.about-title > h1 {
-    font-size: 26px;
-    font-size: 2.6rem;
-    line-height: 38px;
-    display: block;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-}
-
-.about-content > p {
-    font-size: 16px;
-    font-size: 1.6rem;
-    line-height: 34px;
-    display: block;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    color: #000000;
-}
 
 .top-text > span{
     /*font-family: "Benton Sans", SimHei, "Sim Hei", 华文细黑, STXihei, Arial, sans-serif;*/
@@ -133,34 +115,37 @@ body{
 }
 
 .about-title {
-    padding-top: 60px;
+    padding-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    line-height: 50px;
-    color: #333;
-    letter-spacing: 3px;
-    /*font-family: 'Heiti SC';*/
 }
 
 .about-content {
     margin-left: 40px;
     margin-right: 40px;
-    padding-top: 30px;
-    letter-spacing: 2px;
-    line-height: 30px;
-    color: #666;
-    /*font-family: 'Heiti SC';*/
+    padding-top: 20px;
 }
 
 .about-title > h1 {
-    font-size: 24px;
-    font-family: inherit;
+    font-size: 26px;
+    font-size: 2.6rem;
+    line-height: 38px;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #000000;
 }
 
 .about-content > p {
     font-size: 16px;
-    font-family: inherit;
+    font-size: 1.6rem;
+    line-height: 34px;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #000000;
 }
+
 
 .contact-container {
     position: relative;
