@@ -5,7 +5,7 @@
     <link href="{{ asset('css/owl.carousel.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.theme.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.transitions.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/slider.css') }}" rel="stylesheet">
+{{--    <link href="{{ asset('css/slider.css') }}" rel="stylesheet">--}}
     <link href="{{ asset('css/front/online/home.css') }}" rel="stylesheet">
 @endsection
 
