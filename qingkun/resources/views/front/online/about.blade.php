@@ -22,10 +22,10 @@
                  alt="">
         </div>
         <div class="top-text">
-            <h3>About us / 关于我们</h3>
-            {{--<p>--}}
-                {{--成立5年,集建筑设计和城市规划于一体--}}
-            {{--</p>--}}
+            <h3>关于我们</h3>
+            <span>
+                成立5年 , 集建筑设计和城市规划于一体
+            </span>
         </div>
         <div class="overlay"></div>
 
