@@ -1,6 +1,14 @@
 body {
     background-color: #efefef;
+    height:100%;
+    margin:0;
 }
+
+html{
+
+    height:100%;//让html的高度等于屏幕
+}
+
 
 .main {
     padding: 0;
