@@ -45,7 +45,7 @@
 <body>
 <div id="app">
     {{--<header class="cd-auto-hide-header">--}}
-    <nav class="navbar navbar-expand-lg navbar-fixed-top cd-primary-nav" >
+    <nav class="navbar navbar-expand-lg navbar-fixed-top cd-primary-nav" id="navbar">
         <div class="container">
             <div class="navbar-header">
 
@@ -140,6 +140,15 @@
 //                    : requestAnimationFrame(autoHideHeader);
 //        }
 //    });
+
+    window.onscroll = function() {
+        var headerBar = document.getElementById('navbar');
+        if(window.pageYOffset >= 80){
+            headerBar.classList.add('nav-change');
+        } else {
+            headerBar.classList.remove('nav-change');
+        }
+    }
 </script>
 
 @yield('javascript')
