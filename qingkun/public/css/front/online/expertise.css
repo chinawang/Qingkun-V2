@@ -80,7 +80,7 @@ body {
     height: 600px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     overflow: hidden;
 }
 
@@ -129,6 +129,7 @@ body {
     margin-left: 40%;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .view-btn {
@@ -143,7 +144,7 @@ body {
     text-align: center;
     font-size: 13px;
     font-size: 1.3rem;
-    background-color: #0f0f0f;
+    background-color: #000000;
     border: none;
     border-radius: 20px;
     color: #ffffff;
@@ -154,7 +155,7 @@ body {
     text-decoration: none;
 }
 .view-btn:hover{
-    background: #000000;
+    background: #232323;
     color: #ffffff;
     text-decoration: none;
 }
