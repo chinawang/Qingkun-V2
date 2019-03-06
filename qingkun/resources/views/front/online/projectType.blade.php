@@ -34,7 +34,7 @@
                     {{--</a>--}}
                     {{--</form>--}}
                     <a href="/projects/?type_id={{ $type['id'] }}" class="view-item">
-                        <img class="view-img" src="{{ $type['photo'] }}?x-oss-process=style/type">
+                        <img class="view-img" src="{{ $type['photo'] }}">
                         <span class="view-text">{{ $type['name'] }}</span>
                     </a>
                 </li>
