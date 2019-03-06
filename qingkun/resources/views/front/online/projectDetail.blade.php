@@ -151,49 +151,6 @@
                 </ul>
             </div>
 
-            <div class="col-md-4 col-md-offset-0 content-right">
-                <div class="right-title">
-                    <h3>项目概况</h3>
-                </div>
-                <div class="right-des">
-                    @if (!empty($project['type']))
-                        <div>
-                            <span>建筑类型: </span><span>{{ $project['type'] }}</span>
-                        </div>
-                    @endif
-                    @if (!empty($project['address']))
-                        <div>
-                            <span>项目地址: </span><span>{{ $project['address'] }}</span>
-                        </div>
-                    @endif
-                    @if (!empty($project['land_size']))
-                        <div>
-                            <span>总用地面积: </span><span>{{ $project['land_size'] }}</span>
-                        </div>
-                    @endif
-                    @if (!empty($project['size']))
-                        <div>
-                            <span>总建筑面积: </span><span>{{ $project['size'] }}</span>
-                        </div>
-                    @endif
-                    @if (!empty($project['stage']))
-                        <div>
-                            <span>设计阶段: </span><span>{{ $project['stage'] }}</span>
-                        </div>
-                    @endif
-                    @if (!empty($project['design_time']))
-                        <div>
-                            <span>设计时间: </span><span>{{ $project['design_time'] }}</span>
-                        </div>
-                    @endif
-                    @if (!empty($project['build_time']))
-                        <div>
-                            <span>建成时间: </span><span>{{ $project['build_time'] }}</span>
-                        </div>
-                    @endif
-                </div>
-            </div>
-
         </div>
 
 
