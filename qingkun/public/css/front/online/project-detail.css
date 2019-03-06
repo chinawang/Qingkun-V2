@@ -124,7 +124,7 @@ body {
 }
 
 .tag-item:hover{
-    background-color: rgba(0,0,0,1);
+    background-color: rgba(0,0,0,0.70);
     color: #fff;
     text-decoration: none;
 }
