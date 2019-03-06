@@ -101,14 +101,54 @@
         </div>
 
         <div class="row inner-detail">
-
-            <div class=" col-md-8 col-md-offset-0 content-left">
-                <div class="bio">
-                    <p>
+                <div class="top-text">
+                    <h1>
                         {{--{{ $project['introduction'] }}--}}
                         {!! $project['introduction'] !!}
-                    </p>
+                    </h1>
                 </div>
+
+            <div class="content-title">
+                <h3>项目概况</h3>
+            </div>
+            <div class="content-container">
+                <ul>
+                    @if (!empty($project['type']))
+                        <li class="content-item">
+                            <span class="item-title">建筑类型: </span><span class="item-detail">{{ $project['type'] }}</span>
+                        </li>
+                    @endif
+                    @if (!empty($project['address']))
+                        <li class="content-item">
+                            <span class="item-title">项目地址: </span><span class="item-detail">{{ $project['address'] }}</span>
+                        </li>
+                    @endif
+                    @if (!empty($project['land_size']))
+                        <li class="content-item">
+                            <span class="item-title">总用地面积: </span><span class="item-detail">{{ $project['land_size'] }}</span>
+                        </li>
+                    @endif
+                    @if (!empty($project['size']))
+                        <li class="content-item">
+                            <span class="item-title">总建筑面积: </span><span class="item-detail">{{ $project['size'] }}</span>
+                        </li>
+                    @endif
+                    @if (!empty($project['stage']))
+                        <li class="content-item">
+                            <span class="item-title">设计阶段: </span><span class="item-detail">{{ $project['stage'] }}</span>
+                        </li>
+                    @endif
+                    @if (!empty($project['design_time']))
+                        <li class="content-item">
+                            <span class="item-title">设计时间: </span><span class="item-detail">{{ $project['design_time'] }}</span>
+                        </li>
+                    @endif
+                    @if (!empty($project['build_time']))
+                        <li class="content-item">
+                            <span class="item-title">建成时间: </span><span class="item-detail">{{ $project['build_time'] }}</span>
+                        </li>
+                    @endif
+                </ul>
             </div>
 
             <div class="col-md-4 col-md-offset-0 content-right">
