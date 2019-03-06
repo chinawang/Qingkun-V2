@@ -90,7 +90,7 @@
             @endif
 
         </div>
-        <span class="view-subtext">{{ $project['provence_name'] }} , {{ $project['address'] }}</span>
+        <span class="view-subtext">{{ $project['provence_name'] }} / {{ $project['address'] }}</span>
         <span class="view-text">{{ $project['name'] }}</span>
         <div class="view-tag">
             @foreach($project['assignTypes'] as $assignType)
