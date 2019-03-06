@@ -7,6 +7,10 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddFlagToProjects' => $baseDir . '/database/migrations/2018_09_05_090338_add_flag_to_projects.php',
+    'AddIndexToBannersTable' => $baseDir . '/database/migrations/2019_03_06_144438_add_index_to_banners_table.php',
+    'AddIndexToEmployeesTable' => $baseDir . '/database/migrations/2019_03_06_144512_add_index_to_employees_table.php',
+    'AddIndexToProjectsTable' => $baseDir . '/database/migrations/2019_03_06_144401_add_index_to_projects_table.php',
+    'AddIndexToTypesTable' => $baseDir . '/database/migrations/2019_03_06_144423_add_index_to_types_table.php',
     'AddPhotoToProjectsTable' => $baseDir . '/database/migrations/2019_03_03_132341_add_photo_to_projects_table.php',
     'AddStageToProjectsTable' => $baseDir . '/database/migrations/2018_09_03_011056_add_stage_to_projects_table.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',

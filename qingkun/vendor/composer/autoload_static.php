@@ -350,6 +350,10 @@ class ComposerStaticInit669c95193cab03cd306c11c2feb1a31f
 
     public static $classMap = array (
         'AddFlagToProjects' => __DIR__ . '/../..' . '/database/migrations/2018_09_05_090338_add_flag_to_projects.php',
+        'AddIndexToBannersTable' => __DIR__ . '/../..' . '/database/migrations/2019_03_06_144438_add_index_to_banners_table.php',
+        'AddIndexToEmployeesTable' => __DIR__ . '/../..' . '/database/migrations/2019_03_06_144512_add_index_to_employees_table.php',
+        'AddIndexToProjectsTable' => __DIR__ . '/../..' . '/database/migrations/2019_03_06_144401_add_index_to_projects_table.php',
+        'AddIndexToTypesTable' => __DIR__ . '/../..' . '/database/migrations/2019_03_06_144423_add_index_to_types_table.php',
         'AddPhotoToProjectsTable' => __DIR__ . '/../..' . '/database/migrations/2019_03_03_132341_add_photo_to_projects_table.php',
         'AddStageToProjectsTable' => __DIR__ . '/../..' . '/database/migrations/2018_09_03_011056_add_stage_to_projects_table.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',

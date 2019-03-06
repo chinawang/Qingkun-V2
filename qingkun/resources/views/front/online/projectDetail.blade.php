@@ -36,7 +36,7 @@
         <div id="owl-banner" class="owl-carousel">
             @if (!empty($project['photo_large_1']))
                 <a class="item">
-                    <img src="{{ $project['photo_large_1'] }}?" alt="">
+                    <img src="{{ $project['photo_large_1'] }}" alt="">
                 </a>
             @else
                 <a class="item">
