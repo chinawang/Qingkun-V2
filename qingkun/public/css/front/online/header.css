@@ -16,7 +16,7 @@
     max-width: 96%;
 }
 
-.navbar-nav > .active{
+.nav-item.active{
     color: #000000;
     font-weight: 600;
 }
