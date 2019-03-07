@@ -53,7 +53,7 @@ class HomeController extends Controller
 
         for($i=0;$i<count($banners);$i++)
         {
-            $banners[$i]['index'] = $i;
+            $banners[$i]['num'] = $i;
         }
 
         $param = ['banners' => $banners,'posts' => $posts,'awards' => $awards];
