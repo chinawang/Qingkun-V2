@@ -80,7 +80,7 @@ class AwardController extends Controller
         $cursorPage      = array_get($input, 'cursor_page', null);
         $orderColumn     = array_get($input, 'order_column', 'id');
         $orderDirection  = array_get($input, 'order_direction', 'asc');
-        $pageSize        = array_get($input, 'page_size', 20);
+        $pageSize        = array_get($input, 'page_size', 500);
         $awardPaginate = $this->awardLogic->getAwards($pageSize,$orderColumn,$orderDirection,$cursorPage);
         $param = ['awards' => $awardPaginate];
 

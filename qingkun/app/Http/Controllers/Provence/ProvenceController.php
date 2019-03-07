@@ -85,7 +85,7 @@ class ProvenceController extends Controller
         $cursorPage      = array_get($input, 'cursor_page', null);
         $orderColumn     = array_get($input, 'order_column', 'id');
         $orderDirection  = array_get($input, 'order_direction', 'asc');
-        $pageSize        = array_get($input, 'page_size', 20);
+        $pageSize        = array_get($input, 'page_size', 500);
         $provencePaginate = $this->provenceLogic->getProvences($pageSize,$orderColumn,$orderDirection,$cursorPage);
         $param = ['provences' => $provencePaginate];
 
