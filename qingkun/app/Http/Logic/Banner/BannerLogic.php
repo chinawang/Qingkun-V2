@@ -49,7 +49,7 @@ class BannerLogic extends Logic
     public function getAllBanners()
     {
         $conditions = ['delete_process' => 0];
-        $bannerList = $this->bannerRepository->getBy($conditions);
+        $bannerList = $this->bannerRepository->increment($conditions,'index');
         return $bannerList;
     }
 

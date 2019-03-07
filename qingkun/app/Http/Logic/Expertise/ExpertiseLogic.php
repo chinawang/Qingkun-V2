@@ -55,7 +55,7 @@ class ExpertiseLogic extends Logic
 
     public function getAllExpertisesBy($conditions)
     {
-        $expertiseList = $this->expertiseRepository->getBy($conditions);
+        $expertiseList = $this->expertiseRepository->increment($conditions,'index');
         return $expertiseList;
     }
 

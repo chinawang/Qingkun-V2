@@ -50,7 +50,7 @@ class EmployeeLogic extends Logic
     public function getAllEmployees()
     {
         $conditions = ['delete_process' => 0];
-        $employeeList = $this->employeeRepository->getBy($conditions);
+        $employeeList = $this->employeeRepository->increment($conditions,'index');
         return $employeeList;
     }
 

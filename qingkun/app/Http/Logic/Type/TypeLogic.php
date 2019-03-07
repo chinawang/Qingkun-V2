@@ -49,7 +49,7 @@ class TypeLogic extends Logic
     public function getAllTypes()
     {
         $conditions = ['delete_process' => 0];
-        $typeList = $this->typeRepository->getBy($conditions);
+        $typeList = $this->typeRepository->increment($conditions,'index');
         return $typeList;
     }
 
