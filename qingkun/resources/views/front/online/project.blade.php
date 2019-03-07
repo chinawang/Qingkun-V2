@@ -84,7 +84,7 @@
                     <li class="view-content">
                         <a href="/project/detail/{{ $project->id }}" class="view-item">
                             <img class="view-img" src="{{ $project->photo_large_1 }}">
-                            <div class="overlay"></div>
+                            {{--<div class="overlay"></div>--}}
                             <span class="view-subtext">{{ $project->provence_name }}</span>
                             <span class="view-text">{{ $project->name }}</span>
                         </a>
