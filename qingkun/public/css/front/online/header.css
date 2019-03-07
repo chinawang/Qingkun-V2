@@ -16,10 +16,6 @@
     max-width: 96%;
 }
 
-.nav-item:focus{
-    color: #fff;
-    font-weight: 800;
-}
 
 .nav-item.nav-active a{
     color: #fff;
@@ -66,7 +62,17 @@
 }
 
 .nav-link {
+    color: #fff;
+    font-weight: 400;
     letter-spacing: 2px;
+    opacity: .8;
+    transition: opacity .1s ease-in-out;
+}
+
+.nav-link:hover{
+    color: #fff;
+    font-weight: 800;
+    transition: opacity .1s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-active > .nav-link {
