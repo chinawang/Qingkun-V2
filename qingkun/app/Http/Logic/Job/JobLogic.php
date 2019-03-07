@@ -49,7 +49,7 @@ class JobLogic extends Logic
     public function getAllJobs()
     {
         $conditions = ['delete_process' => 0];
-        $jobList = $this->jobRepository->increment($conditions,'index');
+        $jobList = $this->jobRepository->getBy($conditions);
         return $jobList;
     }
 
