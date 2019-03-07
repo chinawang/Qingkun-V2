@@ -63,7 +63,7 @@
 
 .nav-link {
     color: #fff;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 2px;
     /*opacity: .8;*/
     transition: opacity .1s ease-in-out;
@@ -71,7 +71,7 @@
 
 .nav-link:hover{
     color: #fff;
-    font-weight: 800;
+    font-weight: 600;
     transition: opacity .1s ease-in-out;
 }
 

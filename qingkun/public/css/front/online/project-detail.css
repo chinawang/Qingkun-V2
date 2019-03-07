@@ -22,14 +22,14 @@ body {
 .navbar:hover{
     background-color: rgb(0, 0, 0);
 }
-.nav-link:hover{
-     color: #eaeaea;
-     font-weight: 200;
- }
-.nav-link{
-    color: #FFF;
-    font-weight: 400;
-}
+/*.nav-link:hover{*/
+     /*color: #eaeaea;*/
+     /*font-weight: 200;*/
+ /*}*/
+/*.nav-link{*/
+    /*color: #FFF;*/
+    /*font-weight: 400;*/
+/*}*/
 
 #owl-banner {
     width: 100%;
