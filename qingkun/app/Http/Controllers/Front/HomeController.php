@@ -47,16 +47,20 @@ class HomeController extends Controller
 
     public function homeData()
     {
-        $banners = $this->bannerLogic->getAllBanners();
-        $posts = $this->newsLogic->getAllPosts();
-        $awards = $this->awardLogic->getAllAwards();
+//        $banners = $this->bannerLogic->getAllBanners();
+//        $posts = $this->newsLogic->getAllPosts();
+//        $awards = $this->awardLogic->getAllAwards();
+
+        $banners = DB::table('banners')
+            ->where(['delete_process'=>0])
+            ->get()->orderby('index');
 
         for($i=0;$i<count($banners);$i++)
         {
-            $banners[$i]['num'] = $i;
+            $banners[$i]->num = $i;
         }
 
-        $param = ['banners' => $banners,'posts' => $posts,'awards' => $awards];
+        $param = ['banners' => $banners];
 
         return view('front.online.home',$param);
     }

@@ -33,7 +33,10 @@ class ProjectController extends Controller
 
     public function typeData()
     {
-        $types = $this->typeLogic->getAllTypes();
+//        $types = $this->typeLogic->getAllTypes();
+        $types = DB::table('types')
+            ->where(['delete_process'=>0])
+            ->get()->orderby('index');
 
         $param = ['types' => $types];
 
@@ -49,8 +52,8 @@ class ProjectController extends Controller
         {
 //            $projects = $this->projectLogic->getAllProjects();
             $projects = DB::table('projects')
-                ->where(['projects.delete_process'=>0])
-                ->get();
+                ->where(['delete_process'=>0])
+                ->get()->orderby('index');
 //            $count = DB::table('projects')
 //                ->where(['projects.delete_process'=>0])
 //                ->count();
@@ -61,7 +64,7 @@ class ProjectController extends Controller
 //            $projects = $this->projectLogic->getAllProjectsBy($conditions);
             $projects = DB::table('projects')
                 ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID])
-                ->get();
+                ->get()->orderby('index');
 //            $count = DB::table('projects')
 //                ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID])
 //                ->count();
@@ -72,7 +75,7 @@ class ProjectController extends Controller
                 ->join('project_types','projects.id','=','project_types.project_id')
                 ->select('projects.*')
                 ->where(['projects.delete_process'=>0,'project_types.type_id'=>$typeID])
-                ->get();
+                ->get()->orderby('projects.index');
 //            $count = DB::table('projects')
 //                ->join('project_types','projects.id','=','project_types.project_id')
 //                ->where(['projects.delete_process'=>0,'project_types.type_id'=>$typeID])
@@ -84,7 +87,7 @@ class ProjectController extends Controller
                 ->join('project_types','projects.id','=','project_types.project_id')
                 ->select('projects.*')
                 ->where(['projects.delete_process'=>0,'projects.provence'=>$provenceID,'project_types.type_id'=>$typeID])
-                ->get();
+                ->get()->orderby('projects.index');
 //            $count = DB::table('projects')
 //                ->join('project_types','projects.id','=','project_types.project_id')
 //                ->where(['projects.delete_process'=>0,'projects.provence' => $provenceID,'project_types.type_id'=>$typeID])
@@ -119,7 +122,7 @@ class ProjectController extends Controller
 
         $types = DB::table('types')
             ->where(['types.delete_process'=>0])
-            ->get();
+            ->get()->orderby('index');
 
         $selectType = $this->typeLogic->findType($typeID);
         $selectProvence = $this->provenceLogic->findProvence($provenceID);

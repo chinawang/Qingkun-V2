@@ -32,10 +32,10 @@
                 @foreach ($employees as $employee)
                     <li class="view-card">
                         <a class="card-main" href="#" data-toggle="modal"
-                           data-target="#detailModal{{ $employee['id'] }}">
-                            @if (!empty($employee['avatar']))
+                           data-target="#detailModal{{ $employee->id }}">
+                            @if (!empty($employee->avatar))
                                 <img class="view-img"
-                                     src="{{ $employee['avatar'] }}"
+                                     src="{{ $employee->avatar }}"
                                      alt="Card image">
                             @else
                                 <img class="view-img"
@@ -43,10 +43,10 @@
                                      alt="Card image">
                             @endif
                             <h1 class="view-title">
-                                {{ $employee['name'] }}
+                                {{ $employee->name }}
                             </h1>
                             <span class="view-text">
-                            {{ $employee['job'] }}
+                            {{ $employee->job }}
                         </span>
                         </a>
                     </li>
@@ -57,7 +57,7 @@
         <!--详情弹框-->
         @if (!empty($employees[0]))
             @foreach ($employees as $employee)
-                <div class="modal fade" id="detailModal{{ $employee['id'] }}" tabindex="-1" role="dialog"
+                <div class="modal fade" id="detailModal{{ $employee->id }}" tabindex="-1" role="dialog"
                      aria-labelledby="myModalLabel"
                      aria-hidden="true">
                     <div class="modal-dialog">
@@ -68,24 +68,24 @@
                             <div class="row inner-detail">
                                 <div class=" col-md-4 col-md-offset-0 content-left">
                                     <div class="headshot">
-                                        @if (!empty($employee['avatar']))
+                                        @if (!empty($employee->avatar))
                                             <img
-                                                    src="{{ $employee['avatar'] }}"
-                                                    alt="{{ $employee['name'] }}" style="display: block;">
+                                                    src="{{ $employee->avatar }}"
+                                                    alt="{{ $employee->name }}" style="display: block;">
                                         @else
                                             <img
                                                     src="/img/avatar_default.png"
-                                                    alt="{{ $employee['name'] }}" style="display: block;">
+                                                    alt="{{ $employee->name }}" style="display: block;">
                                         @endif
                                     </div>
-                                    <h3>{{ $employee['job'] }}</h3>
+                                    <h3>{{ $employee->job }}</h3>
                                 </div>
                                 <div class="col-md-8 col-md-offset-0 content-right">
-                                    <h1>{{ $employee['name'] }}</h1>
-                                    <h3>{{ $employee['abstract'] }}</h3>
+                                    <h1>{{ $employee->name }}</h1>
+                                    <h3>{{ $employee->abstract }}</h3>
                                     <div class="bio">
                                         <p>
-                                            {{ $employee['introduction'] }}
+                                            {{ $employee->introduction }}
                                         </p>
                                     </div>
 

@@ -25,7 +25,11 @@ class EmployeeController extends Controller
 
     public function employeeData()
     {
-        $employees = $this->employeeLogic->getAllEmployees();
+//        $employees = $this->employeeLogic->getAllEmployees();
+
+        $employees = DB::table('employees')
+            ->where(['delete_process'=>0])
+            ->get()->orderby('index');
 
         $param = ['employees' => $employees];
 

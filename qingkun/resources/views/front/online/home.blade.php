@@ -23,15 +23,15 @@
             <div class="slider">
                 @if (!empty($banners[0]))
                     @foreach ($banners as $banner)
-                            <a class="slide slide-{{ $banner['num'] }}" href="project/detail/{{ !empty($banner['project_id'])?$banner['project_id']:0 }}">
-                                @if (!empty($banner['photo']))
-                                    <img class="slide__bg" src="{{ $banner['photo'] }}" alt="">
+                            <a class="slide slide-{{ $banner->num }}" href="project/detail/{{ !empty($banner->project_id)?$banner->project_id:0 }}">
+                                @if (!empty($banner->photo))
+                                    <img class="slide__bg" src="{{ $banner->photo }}" alt="">
                                 @else
                                     <img class="slide__bg" src="/img/banner_default.png" alt="">
                                 @endif
 
-                                <div class="slide__text text__{{ $banner['num'] }}">
-                                    <h3 class="slide__text-heading">{{ $banner['name'] }}</h3>
+                                <div class="slide__text text__{{ $banner->num }}">
+                                    <h3 class="slide__text-heading">{{ $banner->name }}</h3>
                                 </div>
                             </a>
                     @endforeach
