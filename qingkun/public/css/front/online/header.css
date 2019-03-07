@@ -44,7 +44,7 @@
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
     /*color: #3498db;*/
 }
 
@@ -60,7 +60,7 @@
     padding-right: 16px;
     text-align: center;
     font-size: 16px;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .nav-link {
@@ -140,7 +140,8 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    font-family: PingFang SC, Microsoft YaHei UI, STHeitiSC-Light, Microsoft YaHei;
+    /*font-family: PingFang SC, Microsoft YaHei UI, STHeitiSC-Light, Microsoft YaHei;*/
+    font-family: "Noto Sans TC",Helvetica,Arial;
 }
 
 

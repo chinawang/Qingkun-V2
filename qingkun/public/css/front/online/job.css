@@ -172,14 +172,14 @@ body{
     margin-bottom: 6px;
     font-size: 16px;
     color: #0d1318;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .card-text {
 
     font-size: 14px;
     color: #8c8c8c;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 
 }
 
@@ -273,7 +273,7 @@ body{
     margin: 40px;
     color: #000000;
     letter-spacing: 6px;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .content-subtitle {
@@ -287,46 +287,46 @@ body{
     letter-spacing: 6px;
     margin-left: 40px;
     margin-top: -20px;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .content-address {
     margin-left: 20px;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .content-first {
     margin: 40px;
     font-size: 14px;
     letter-spacing: 4px;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .first-title {
     color: #bfbfbf;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .first-content {
     margin-top: 10px;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .content-second {
     margin: 40px;
     font-size: 14px;
     letter-spacing: 4px;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .second-title {
     color: #bfbfbf;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .second-content {
     margin-top: 10px;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
 
 .content-footer {
@@ -334,5 +334,5 @@ body{
     font-size: 16px;
     letter-spacing: 6px;
     color: #004995;
-    font-family: 'Heiti SC';
+    /*font-family: 'Heiti SC';*/
 }
