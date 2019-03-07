@@ -11,8 +11,14 @@
     /*transition: background-color .6s;*/
 /*}*/
 
+
 .navbar > .container {
     max-width: 96%;
+}
+
+.navbar-nav > .active > a {
+    color: #000000;
+    font-weight: 600;
 }
 
 .nav-change {
