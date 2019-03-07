@@ -53,7 +53,8 @@ class HomeController extends Controller
 
         $banners = DB::table('banners')
             ->where(['delete_process'=>0])
-            ->get()->orderby('index');
+            ->orderBy('index','asc')
+            ->get();
 
         for($i=0;$i<count($banners);$i++)
         {

@@ -29,7 +29,8 @@ class EmployeeController extends Controller
 
         $employees = DB::table('employees')
             ->where(['delete_process'=>0])
-            ->get()->orderby('index');
+            ->orderBy('index','asc')
+            ->get();
 
         $param = ['employees' => $employees];
 
