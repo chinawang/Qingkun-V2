@@ -16,6 +16,11 @@
     max-width: 96%;
 }
 
+.nav-item:focus{
+    color: #fff;
+    font-weight: 800;
+}
+
 .nav-item.nav-active a{
     color: #fff;
     font-weight: 800;
