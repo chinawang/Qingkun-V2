@@ -88,6 +88,10 @@
     text-decoration: none;
 }
 
+.view-item:focus{
+    text-decoration: none;
+}
+
 .view-img {
     position: relative;
     width: 100%;
