@@ -1,5 +1,6 @@
 body{
     background-color: #f9f9f9;
+    /*background-color: #000000;*/
 }
 
 
@@ -17,7 +18,7 @@ body{
 
 
 .top-banner > img{
-    height: 560px;
+    /*height: 100%;*/
     width: 100%;
 }
 
@@ -77,6 +78,82 @@ body{
     margin-bottom: 60px;
 }
 
+.view-content {
+    padding: 0;
+    /*width: 90%;*/
+    /*margin-left: 5%;*/
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    /*background-color: #F5F5F5;*/
+
+}
+
+.view-card {
+    position: relative;
+    float: left;
+    background-color: #ffffff;
+    width: calc(25% - 40px);
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*border: 1px solid rgba(0, 0, 0, 0.06);*/
+    /*box-shadow: 0 0px 5px rgba(0,0,0,.05);*/
+}
+
+.view-card:hover {
+    box-shadow: 0 0px 36px rgba(0,0,0,.1);
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+}
+
+.view-img {
+    /*height: 240px;*/
+    width: 100%;
+    display: block;
+    transition: all 0.6s;
+}
+
+.view-img:hover {
+    transform: scale(1.02);
+}
+
+.view-title{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 50px;
+    /*left: 48px;*/
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 38px;
+    display: block;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.view-text{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 20px;
+    /*left: 48px;*/
+    /*margin-right: 48px;*/
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 34px;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
 .card {
     width: 220px;
     margin: 20px;
@@ -99,6 +176,7 @@ body{
 
 .card-main {
     text-decoration:none;
+    text-align: center;
 }
 
 .card-main:hover {
@@ -117,7 +195,7 @@ body{
 }
 
 .card-img {
-    height: 200px;
+    /*height: 200px;*/
     width: 100%;
     display: block;
     transition: all 0.6s;
@@ -172,7 +250,7 @@ body{
 
 .headshot >img {
     width: 300px;
-    height:300px;
+    /*height:300px;*/
     padding-top: 20px;
 }
 

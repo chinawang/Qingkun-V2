@@ -18,7 +18,7 @@
     <div class="main">
 
         <div class="top-banner">
-            <img src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/static/som_partners_2017_1600x670_codypickens_1-v3-3.jpg"
+            <img src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/static/employ-banner.jpg"
                  alt="">
         </div>
         <div class="top-text">
@@ -26,7 +26,7 @@
                 公司办公设经营部、规划设计部、4 个建筑组、 2 个结构组、1 个设备设计部、财务部、办公室等部门。现有团队 80 多人，骨干设计人员全程参与了绿城集团中式与现代品类产品的创新研发，并已完成多个项目的实景呈现。
             </h1>
         </div>
-        <div class="overlay"></div>
+        {{--<div class="overlay"></div>--}}
         <ul class="view-content">
             @if (!empty($employees[0]))
                 @foreach ($employees as $employee)

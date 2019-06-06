@@ -18,7 +18,7 @@
     <div class="main">
 
         <div class="top-banner">
-            <img src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/static/som_partners_2017_1600x670_codypickens_1-v3-3.jpg"
+            <img src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/static/employ-banner.jpg"
                  alt="">
         </div>
         <div class="top-text">
@@ -29,297 +29,142 @@
         </div>
         <div class="overlay"></div>
 
-        <div class="row row-card">
-
-            <div class="card mb-3">
+        <ul class="view-content">
+            <li class="view-card">
                 <a class="card-main" href="#" data-toggle="modal" data-target="#detailModal">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/arizmendi_javier_800x800_codypickens_0667.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
+                    <img class="view-img"
+                         src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/%E9%99%88%E4%B8%AD%E6%B6%9B1.jpg"
+                         alt="Card image">
+                    <h1 class="view-title">
+                        Feona
+                    </h1>
+                    <span class="view-text">
+                                设计总监
+                    </span>
                 </a>
-            </div>
+            </li>
 
-            <div class="card mb-3">
+            <li class="view-card">
                 <a class="card-main" href="#" data-toggle="modal" data-target="#detailModal">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/behr_thomas_800x800_codypickens_01.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
+                    <img class="view-img"
+                         src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/%E9%99%88%E4%B8%AD%E6%B6%9B1.jpg"
+                         alt="Card image">
+                    <h1 class="view-title">
+                        Feona
+                    </h1>
+                    <span class="view-text">
+                                设计总监
+                    </span>
                 </a>
-            </div>
+            </li>
 
-            <div class="card mb-3">
+            <li class="view-card">
                 <a class="card-main" href="#" data-toggle="modal" data-target="#detailModal">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/boswell_keith_800x800_codypickens_0121.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
+                    <img class="view-img"
+                         src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/%E9%99%88%E4%B8%AD%E6%B6%9B1.jpg"
+                         alt="Card image">
+                    <h1 class="view-title">
+                        Feona
+                    </h1>
+                    <span class="view-text">
+                                设计总监
+                    </span>
                 </a>
-            </div>
+            </li>
 
-            <div class="card mb-3">
+            <li class="view-card">
                 <a class="card-main" href="#" data-toggle="modal" data-target="#detailModal">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/danna_paul_800x800_codypickens_00238.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
+                    <img class="view-img"
+                         src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/%E9%99%88%E4%B8%AD%E6%B6%9B1.jpg"
+                         alt="Card image">
+                    <h1 class="view-title">
+                        Feona
+                    </h1>
+                    <span class="view-text">
+                                设计总监
+                    </span>
                 </a>
-            </div>
+            </li>
 
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/duncan_michael_800x800_codypickens_0563.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
+            <li class="view-card">
+                <a class="card-main" href="#" data-toggle="modal" data-target="#detailModal">
+                    <img class="view-img"
+                         src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/%E9%99%88%E4%B8%AD%E6%B6%9B1.jpg"
+                         alt="Card image">
+                    <h1 class="view-title">
+                        Feona
+                    </h1>
+                    <span class="view-text">
+                                设计总监
+                    </span>
                 </a>
-            </div>
+            </li>
 
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/fu_xuan_800x800_codypickens_0571.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
+            <li class="view-card">
+                <a class="card-main" href="#" data-toggle="modal" data-target="#detailModal">
+                    <img class="view-img"
+                         src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/%E9%99%88%E4%B8%AD%E6%B6%9B1.jpg"
+                         alt="Card image">
+                    <h1 class="view-title">
+                        Feona
+                    </h1>
+                    <span class="view-text">
+                                设计总监
+                    </span>
                 </a>
-            </div>
+            </li>
 
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/lee_brian_800x800_codypickens_01.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
+            <li class="view-card">
+                <a class="card-main" href="#" data-toggle="modal" data-target="#detailModal">
+                    <img class="view-img"
+                         src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/%E9%99%88%E4%B8%AD%E6%B6%9B1.jpg"
+                         alt="Card image">
+                    <h1 class="view-title">
+                        Feona
+                    </h1>
+                    <span class="view-text">
+                                设计总监
+                    </span>
                 </a>
-            </div>
+            </li>
 
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/mckenzie_olin_800x800_codypickens_01.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
+            <li class="view-card">
+                <a class="card-main" href="#" data-toggle="modal" data-target="#detailModal">
+                    <img class="view-img"
+                         src="/img/avatar_default.png"
+                         alt="Card image">
+                    <h1 class="view-title">
+                        Feona
+                    </h1>
+                    <span class="view-text">
+                                设计总监
+                    </span>
                 </a>
-            </div>
+            </li>
 
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/arizmendi_javier_800x800_codypickens_0667.jpg"
-                             alt="Card image">
-                    </div>
+        </ul>
 
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
-                </a>
-            </div>
+        {{--<div class="row row-card">--}}
 
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/behr_thomas_800x800_codypickens_01.jpg"
-                             alt="Card image">
-                    </div>
+            {{--<div class="card mb-3">--}}
+                {{--<a class="card-main" href="#" data-toggle="modal" data-target="#detailModal">--}}
+                    {{--<div class="card-top">--}}
+                        {{--<img class="card-img"--}}
+                             {{--src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/%E9%99%88%E4%B8%AD%E6%B6%9B1.jpg"--}}
+                             {{--alt="Card image">--}}
+                    {{--</div>--}}
 
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
-                </a>
-            </div>
+                    {{--<div class="card-body">--}}
+                        {{--<h5 class="card-title">Feona</h5>--}}
+                    {{--</div>--}}
+                    {{--<div class="card-body">--}}
+                        {{--<p class="card-text">--}}
+                            {{--设计总监</p>--}}
+                    {{--</div>--}}
+                {{--</a>--}}
+            {{--</div>--}}
 
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/boswell_keith_800x800_codypickens_0121.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/danna_paul_800x800_codypickens_00238.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/duncan_michael_800x800_codypickens_0563.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/fu_xuan_800x800_codypickens_0571.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/lee_brian_800x800_codypickens_01.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card mb-3">
-                <a class="card-main" href="#">
-                    <div class="card-top">
-                        <img class="card-img"
-                             src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/mckenzie_olin_800x800_codypickens_01.jpg"
-                             alt="Card image">
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Feona</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            设计总监</p>
-                    </div>
-                </a>
-            </div>
-
-        </div>
+        {{--</div>--}}
 
         <!--详情弹框-->
 
@@ -333,7 +178,7 @@
                     <div class="row inner-detail">
                         <div class=" col-md-4 col-md-offset-0 content-left">
                             <div class="headshot"><img
-                                        src="https://www.som.com/china/FILE/26982/apking_stephen_800x800_codypickens_01.jpg"
+                                        src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/avatar/%E9%99%88%E4%B8%AD%E6%B6%9B1.jpg"
                                         alt="Stephen Apking" style="display: block;"></div>
                             <h3>设计总监</h3>
                         </div>
@@ -370,13 +215,13 @@
     </div>
 
     {{--<footer class="footer-container">--}}
-        {{--<div class="col-md-8 col-md-offset-2 foot-text">--}}
-            {{--<a class="foot-link" href="http://www.miitbeian.gov.cn/" target="_blank">--}}
-                {{--浙ICP备18021663号--}}
-            {{--</a>--}}
-            {{--&nbsp--}}
-            {{--<span>©2018 浙江青坤东方建筑设计有限公司</span>--}}
-        {{--</div>--}}
+    {{--<div class="col-md-8 col-md-offset-2 foot-text">--}}
+    {{--<a class="foot-link" href="http://www.miitbeian.gov.cn/" target="_blank">--}}
+    {{--浙ICP备18021663号--}}
+    {{--</a>--}}
+    {{--&nbsp--}}
+    {{--<span>©2018 浙江青坤东方建筑设计有限公司</span>--}}
+    {{--</div>--}}
     {{--</footer>--}}
 
 @endsection
