@@ -72,15 +72,17 @@ body {
 }
 
 .overlay {
-    /*height: 560px;*/
+    height: 80px;
     /*margin-top: 80px;*/
+
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 2;
-    background-color: rgba(0,0,0,.4);
+    /*background-color: rgba(0,0,0,.4);*/
+    background: -webkit-linear-gradient(top,rgba(0,0,0,.4),rgba(0,0,0,0));
 }
 
 .view-content {
