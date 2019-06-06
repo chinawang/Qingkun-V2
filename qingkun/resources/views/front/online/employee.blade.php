@@ -18,6 +18,7 @@
     <div class="main">
 
         <div class="top-banner">
+            <div class="overlay"></div>
             <img src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/static/employ-banner.jpg"
                  alt="">
         </div>

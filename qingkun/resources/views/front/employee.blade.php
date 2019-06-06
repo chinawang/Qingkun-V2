@@ -18,6 +18,7 @@
     <div class="main">
 
         <div class="top-banner">
+            <div class="overlay"></div>
             <img src="https://qingkun-img.oss-cn-hangzhou.aliyuncs.com/static/employ-banner.jpg"
                  alt="">
         </div>
@@ -27,7 +28,7 @@
                 creative, technical, and management expertise, their holistic approach enhances the design and
                 construction process, and contributes to the success of each project.</p>
         </div>
-        <div class="overlay"></div>
+        {{--<div class="overlay"></div>--}}
 
         <ul class="view-content">
             <li class="view-card">
