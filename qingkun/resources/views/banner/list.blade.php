@@ -51,6 +51,7 @@
                                     <th>备注</th>
                                     <th>图片</th>
                                     <th>关联项目ID</th>
+                                    <th>排序</th>
 
                                     @if (app('App\Http\Logic\Rbac\RbacLogic')->check(Auth::user()->id, 'employee-edit'))
                                         <th>操作</th>
@@ -65,6 +66,7 @@
                                         <td>{{ $banner['remark'] }}</td>
                                         <td>{{ $banner['photo'] }}</td>
                                         <td>{{ $banner['project_id'] }}</td>
+                                        <td>{{ $banner['index'] }}</td>
 
                                         @if (app('App\Http\Logic\Rbac\RbacLogic')->check(Auth::user()->id, 'employee-edit'))
                                             <td>

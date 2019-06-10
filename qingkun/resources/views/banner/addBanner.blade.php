@@ -95,6 +95,22 @@
                                 </div>
                             </div>
 
+                            <div class="form-group{{ $errors->has('index') ? ' has-error' : '' }}">
+                                <label for="index" class="col-md-4 control-label">排序</label>
+
+                                <div class="col-md-6">
+                                    <input id="index" type="text" class="form-control" name="index"
+                                           value="{{ old('index') }}" placeholder="请输入展示序号"
+                                    >
+
+                                    @if ($errors->has('index'))
+                                        <span class="help-block">
+                                        <strong>{{ $errors->first('index') }}</strong>
+                                    </span>
+                                    @endif
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
                                     <button type="submit" class="btn btn-primary btn-custom">
