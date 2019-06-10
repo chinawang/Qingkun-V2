@@ -31,12 +31,13 @@ class BannerValidation extends Validation
     public function storeNewBanner()
     {
         $input = $this->filterRequest([
-            'name','photo','remark','project_id']);
+            'name','photo','remark','index','project_id']);
 
         $rules = [
             'name' => ['string'],
             'photo' => ['string'],
             'remark' => ['string'],
+            'index' => ['integer'],
             'project_id' => ['integer'],
         ];
 
@@ -55,12 +56,13 @@ class BannerValidation extends Validation
     public function updateBanner($bannerId)
     {
         $input = $this->filterRequest([
-            'name','photo','remark','project_id']);
+            'name','photo','remark','index','project_id']);
 
         $rules = [
             'name' => ['string'],
             'photo' => ['string'],
             'remark' => ['string'],
+            'index' => ['integer'],
             'project_id' => ['integer'],
         ];
 
